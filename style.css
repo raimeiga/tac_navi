@@ -1,0 +1,12 @@
+body {
+    width:1440px;
+}
+
+#header_logo {
+    width:65px;
+    height: 65px;
+}
+
+#company_name {
+ font-size: 36px;
+}

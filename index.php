@@ -57,7 +57,7 @@
           <div id="business_container_first">
             <div id="digital_wrapper">
                 <div id="digital">
-                    <img src="<?php echo get_template_directory_uri();?>/images/Vector@2x.png">
+                    <img src="<?php echo get_template_directory_uri();?>/images/icon-black-pc.png">
                     <h1>デジタル戦略策定</h1>
                 </div>
 
@@ -72,6 +72,26 @@
                 </div>
             </div>
             <img id="chart" src="<?php echo get_template_directory_uri();?>/images/business_chart_01.png">
+          </div>
+
+          <div id="business_container_second">
+            <div id="seminar_wrapper">
+                <div id="seminar">
+                    <img src="<?php echo get_template_directory_uri();?>/images/icon-seminar.png">
+                    <h1>人材育成</h1>
+                </div>
+
+                <div id="seminar_explain01">
+                    <img class="check_mark" src="<?php echo get_template_directory_uri();?>/images/check-mark.png">
+                    <p>データ分析に基づいて、最適で実現可能なデジタル戦略を策定。</p>
+                </div>
+
+                <div id="seminar_explain02">
+                    <img class="check_mark" src="<?php echo get_template_directory_uri();?>/images/check-mark.png">
+                    <p>デジタル技術を活用した新規事業の企画、既存事業のデジタル化なども支援。</p>
+                </div>
+            </div>
+            <img id="seminar-space" src="<?php echo get_template_directory_uri();?>/images/seminar.png">
           </div>
 
             

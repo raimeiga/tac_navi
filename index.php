@@ -92,9 +92,7 @@
                     <p>デジタル技術を活用した新規事業の企画、既存事業のデジタル化なども支援。</p>
                 </div>
             </div>
-          </div>
-
-            
+          </div>            
         </section>
 
         <section id="advantage">
@@ -112,7 +110,25 @@
               </p>
             </div>
 
-          </div>
+           
+            <div id="item_02">
+              <h1>02</h1>
+              <img src="<?php echo get_template_directory_uri();?>/images/icon-talent.png">
+              <h3>豊富な経験と専門知識を持つ人材</h3>
+              <p>長年の経験と専門知識を持つコンサルタントが、お客様の課題を徹底的に分析し、最適な解決策を提案。<br><br>
+                 幅広い分野の専門家チームが、多角的な視点 で課題解決を支援。
+              </p>
+            </div>
+
+            <div id="item_03">
+              <h1>03</h1>
+              <img src="<?php echo get_template_directory_uri();?>/images/icon-shake_hands.png">
+              <h3>顧客満足度95%の実績</h3>
+              <p>顧客満足度調査で95%という高い評価を獲得。<br><br>
+                 顧客との密接なコミュニケーションを重視し、期待以上の成果を提供。
+              </p>
+            </div>
+       
 
 
             

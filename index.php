@@ -50,9 +50,9 @@
 
         
         <section id="business">
-          <h1 class="space_100px"><!-- 単なるスペース --></h1>
+          <h1 class="space_px"><!-- 単なるスペース --></h1>
           <h1>事業内容</h1>
-          <h1 class="space_100px"><!-- 単なるスペース --></h1>
+          <h1 class="space_px"><!-- 単なるスペース --></h1>
 
           <div id="business_container_first">
             <div id="digital_wrapper">
@@ -75,6 +75,7 @@
           </div>
 
           <div id="business_container_second">
+            <img id="seminar-space" src="<?php echo get_template_directory_uri();?>/images/seminar.png">
             <div id="seminar_wrapper">
                 <div id="seminar">
                     <img src="<?php echo get_template_directory_uri();?>/images/icon-seminar.png">
@@ -91,14 +92,29 @@
                     <p>デジタル技術を活用した新規事業の企画、既存事業のデジタル化なども支援。</p>
                 </div>
             </div>
-            <img id="seminar-space" src="<?php echo get_template_directory_uri();?>/images/seminar.png">
           </div>
 
             
         </section>
 
-        <section>
-        <h1>当社の強み</h1>
+        <section id="advantage">
+          <h1 class="space_px"><!-- 単なるスペース --></h1>
+          <h1>当社の強み</h1>
+          <h1 class="space_px"><!-- 単なるスペース --></h1>
+
+          <div id="advantage_container">
+            <div id="item_01">
+              <h1>01</h1>
+              <img src="<?php echo get_template_directory_uri();?>/images/icon-pc2.png">
+              <h3>業界特化型ソリューションによる効率化</h3>
+              <p>特定の業界に特化したソリューションを提供することで、課題解決の迅速化を実現。<br><br>
+                 豊富な経験とノウハウに基づいた最適な提案で、業務効率を大幅に向上させ、顧客満足度向上に貢献。
+              </p>
+            </div>
+
+          </div>
+
+
             
         </section>
 

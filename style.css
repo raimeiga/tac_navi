@@ -1,9 +1,11 @@
 body {
     width:1440px;
-    height: auto;
+    height: 3318px;
+    background-color: #fff;
     margin-left: auto;
     margin-right: auto;
     font-family: Noto Sans JP;
+    border: 1px solid;
 }
 
 #line-top {
@@ -201,24 +203,27 @@ body {
 /* 事業内容  ここから */
 #business {
   width: 100%;
-  height: 1020px;
+  height: 1120px;   
+  /* height: 1520px;  */
   /* background-color: antiquewhite; */
   background-image: url("images/background-colorful.png");
-  background-size: cover; /* 背景画像がdivのサイズに合わせてカバーされます */
+  /* background-size: cover; 背景画像がdivのサイズに合わせてカバーされます */
   background-position: center; /* 背景画像がdivの中心に表示されます */
   }
 
-  .space_100px {
+  .space_px {
   width: 100%;
-  height: 81px;
+  height: 90px;
+  margin: 0;
+  background-color: #b1c4ce;
 }
 
-/* 「事業内容」 */
-#business h1:nth-child(2) {
+#business h1:nth-child(2),#advantage h1:nth-child(2){
   color: #444444;
   text-shadow: 5px 5px 4px #808080;
-  width: 192px;
-  height: 48px;
+  width: 250px;
+  text-align: center;
+  height: 48px; /* 「事業内容」 */
   font-size: 48px;
   font-weight: 300;
   line-height: 1;
@@ -240,53 +245,48 @@ body {
   width:100%;
 }
 
-
-
 #digital_wrapper {
   display: inline-block;
   width: 550px;
   /* background-color: red; */
-  margin-top: 20px;
-  margin-left: 93px;
+  margin-top: 60px;
+  margin-left: 128px;
 }
 
 #seminar_wrapper {
-  display: inline-block;
+  display: inline-block;  
   width: 550px;
   /* background-color: red; */
-  margin-top: 20px;
-  margin-left: 93px;
+  margin-top: 130px;
+  margin-right: 103px;
 }
-
-
 
 #chart {
   display: inline-block;
   width: 500px;
-  margin-right: 97px;
+  margin-right: 130px;
 }
 
 #seminar-space {
   display: inline-block;
   width: 500px;
-  margin-right: 97px;
+  margin-top: 107px;
+  margin-left: 137px;
 }
-
-
 
 #digital {  
   display: flex;
   justify-content: space-around;
   width: 480px;
+  margin-left: 15px;
 }
 
 #seminar {  
   display: flex;
   justify-content: space-around;
-  width: 480px;
+  width: 302.5px;
+  margin-left: 76px;  
 }
-
-
 
 #digital img {  
   width: 45px;
@@ -300,8 +300,6 @@ body {
   margin: 0px 0 0 40px;  
 }
 
-
-
 #digital h1:nth-child(2) {  
   width: 350px;
   color: #0B368C ;
@@ -310,23 +308,21 @@ body {
   font-family: "Noto Sans JP", sans-serif;
   font-weight:500;
   padding: 0;
-  /* margin-left:  */
-  margin:0 0 0px 0px;
+  margin: 0;
 }
 
 #seminar h1:nth-child(2) {  
-  width: 350px;
+  width: 170px;
+  padding: 0;
+  margin: 0;
   color: #0B368C ;
   text-shadow: none;
   font-size: 40px;  /* 「人材育成」 */
   font-family: "Noto Sans JP", sans-serif;
   font-weight:500;
   padding: 0;
-  /* margin-left:  */
-  margin:0 0 0px 0px;
+  margin: 0;
 }
-
-
 
 #digital_explain01 {
   display: flex;
@@ -342,21 +338,17 @@ body {
   margin-top: 50px;
 }
 
-
-
 .check_mark {
   width: 26px;
   height: 26px;
 }
 
-
-
 #digital_explain01 p:nth-child(2) {
- width: 500px;
+ width: 490px;
   font-size: 26px;
   line-height: 1;
   padding: 0;  
-  margin:0 0 0 0px;
+  margin:0;  
 }
 
 #seminar_explain01 p:nth-child(2) {
@@ -364,10 +356,8 @@ body {
    font-size: 26px;
    line-height: 1;
    padding: 0;  
-   margin:0 0 0 0px;
+   margin:0;  
  }
-
-
 
 #digital_explain02 {
   display: flex;
@@ -383,14 +373,12 @@ body {
   margin-top: 50px;
 }
 
-
-
 #digital_explain02 p:nth-child(2) {
   width: 500px;
    font-size: 26px;
    line-height: 1;
    padding: 0;  
-   margin:0 0 0 0px;
+   margin: 0;  
  }
 
  #seminar_explain02 p:nth-child(2) {
@@ -398,8 +386,71 @@ body {
    font-size: 26px;
    line-height: 1;
    padding: 0;  
-   margin:0 0 0 0px;
+   margin: 0;  
  }
+  /* 事業内容  ここまで */
 
 
-    /* 事業内容  ここまで */
+
+  /* 当社の強み  ここから */
+  #advantage {
+    width: 100%;
+    height: 1500px;
+    background: #fff;
+    border: 1px solid;
+  }
+
+
+
+
+  /* 当社の強み  ここまで */
+  #item_01 {
+    width: 374px;
+    height: 538px;
+    border: 5px solid;
+    border-color: #38A1DB;
+  }
+
+  #item_01 > h1 {
+    width: 59px;
+    height: 72px;    
+    color: rgba(175, 204, 219, 0.6);   /* テキストのぼかし・シャドウ */
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);  /* テキストを斜体にするプロパティ */    
+    transform: skewX(-27deg);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 50px;  
+    font-weight: 600;
+    padding: 0;
+    margin: 8px 0 0 15px;   
+    line-height: 1;
+  }
+
+  #item_01 > img {
+    width: auto;
+    height: auto;  
+    padding: 0;
+    margin: 5px 0 60px 98px;    
+    line-height: 1;    
+  }
+
+  #item_01 > h3 {
+    width: 288px;
+    height: 70px;
+    color: #287199;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 24px;  
+    font-weight: 500;
+    padding: 0;
+    margin: 0 auto;    
+  }
+
+  #item_01 > p {
+    width: 285px;
+    height: 161px;
+    color: #444444;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;  
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;    
+  }

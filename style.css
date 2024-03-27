@@ -487,9 +487,15 @@ body {
   
 /* お問い合わせページ　ここから */
 
-#information {
+#contact-info {
   width: 100%;
   height: 1500px;
+}
+
+#contact-info > p {
+  font-size: 16px;
+  padding: 0;
+  margin: 0 0 50px 0;
 }
 
 /* 各ページヘッダー下の水色帯 */
@@ -549,7 +555,7 @@ body {
 
 form label {
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-family: Noto Sans JP;
   font-weight: 400;
 }
@@ -573,7 +579,7 @@ form label {
 }
 
 .item-name {
-  width: 60px;
+  width: 160px;
   height: 31px;
   padding: 0 6px;
   /* margin: 0 120px 0 0;     */
@@ -581,26 +587,58 @@ form label {
 
 .input_field {
   width: 834px;
-  height: 2em;  /* emは親要素のフォントサイズを1とする単位 */
-  font-size: 20px;
+  height: 2em;    /* emは親要素のフォントサイズを1とする単位 */
+  font-size: 16px;
   font-family: Noto Sans JP;
   font-weight: 400;
   margin-bottom: 50px;
 }
 
-textarea {
-  margin-top: 50px;
+ textarea {
+  width: 834px;
+  height: 10em;
+  font-size: 16px;
+  font-family: Noto Sans JP;
+  font-weight: 400;  
+} 
+
+#detail {
+  display: flex;
+  align-items: baseline;
+  margin: 0 0 50px 0;
 }
 
-#submit {
+#detail label:nth-child(1) {
   background-color: #FFBB00;
-  border: none;
-  width: 191px;
-  height: 48.15px;
-  clip-path:polygon(0% 0, 100% 0, 89.39% 100%, 0 100%);
- 
-
+  width: 52px;
+  height: 21px;
+  padding: 3.5px 0 0.5px 0px;
+  margin: 0;  
+  line-height: 1;
 }
+
+#detail label:nth-child(2) {
+  width: 128px;
+  height: 31px;
+  padding: 0 10px;
+}
+
+.submit-btn {
+  background-color: #FFBB00; /* オレンジ系の色 */
+  border: none;               /* 枠線なし */
+  width: 191px;               /* 幅 */
+  height: 48.15px;            /* 高さ */
+  clip-path:polygon(0% 0, 100% 0, 89.39% 100%, 0 100%); /* 右下の端を少しカット */
+  font-family: sans-serif;    /* フォントファミリーを指定（必要に応じて変更してください） */
+  display: inline-flex;       /* ボタン内の要素を横並びにする */
+  align-items: center;        /* 中心に合わせる */
+  padding: 0 0 0 72px;  
+}
+
+.submit-arrow {
+  margin-left: 55px; /* アイコンとテキストの間隔 */
+}
+
 
 /* お問い合わせページ  ここまで */
 

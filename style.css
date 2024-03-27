@@ -492,30 +492,60 @@ body {
   height: 1500px;
 }
 
-#wrapper {
+/* 各ページヘッダー下の水色帯 */
+.wrapper {
   width: 100%;
   height: 176px;
   background-color: #38A1DB;
 }
 
-.title{
+/* お問い合わせページのタイトル */
+#title-contact_j {   
   text-align: center;
   color: #fff;
   font-size: 42px;
   font-family: Noto Sans JP;
   font-weight: 400;
   margin: 0;
-  line-height: 1;
-}
-
-#wrapper h1{    
+  line-height: 1; 
   padding: 42px 0 0 0;
 }
 
-#wrapper h2 {
+/* お知らせ一覧ページのタイトル */
+#title-news_press_j{
+  text-align: center;
+  color: #fff;
+  font-size: 42px;
+  font-family: Noto Sans JP;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1; 
+  padding: 49px 0 0 0;
+}
+
+/* お問い合わせページのタイトル 英 */
+#title-contact_e {
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  font-family: Noto Sans JP;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1; 
   padding: 6px 0 0 0;
 }
 
+/* お知らせ一覧ページのタイトル 英*/
+#title-news_press_e {
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-family: Noto Sans JP;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1; 
+  padding: 6px 0 0 0;
+}
 
 form label {
   text-align: center;
@@ -573,3 +603,8 @@ textarea {
 }
 
 /* お問い合わせページ  ここまで */
+
+/* お知らせ一覧ページ */
+#news_press {
+  font-size: 30px;
+}

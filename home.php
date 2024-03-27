@@ -1,4 +1,4 @@
-
+<!-- トップページ -->
 <?php get_header();?>  <!-- ← header.phpからヘッダーのコードを呼び出す -->
     <main>
         <section id="top">

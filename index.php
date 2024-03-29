@@ -29,7 +29,7 @@
            <!-- ↑　↓　会社情報のページに遷移するように、URLを書く。会社情報と問い合わせだから、固定ページかな。。。 -->
         </nav>
         <div id="header_navi_02">
-           <a href="<?php echo esc_url(home_url('/category/news/')); ?>" >お問い合わせ</a>
+           <a href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
         </div>
       </div>
     </header>
@@ -146,7 +146,7 @@
         <nav id="footer_navi">                         
            <a href="<?php echo esc_url(home_url()); ?>#business" >事業内容</a>
            <a href="<?php echo esc_url(home_url()); ?>#BUSINESS" >会社情報</a>
-           <a href="<?php echo esc_url(home_url('/category/news/')); ?>" >お問い合わせ</a>
+           <a href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
            <!-- ↑　↓　会社情報のページに遷移するように、URLを書く。会社情報と問い合わせだから、固定ページかな。。。 -->
         </nav>       
       </div>

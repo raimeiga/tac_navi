@@ -11,6 +11,9 @@
       </div>
 </section>
 
+<a>これはテスト用リンク</a>
+<a href="<?php echo esc_url(home_url('/category/news_detail/')); ?>" class="animate-border-link">お知らせ詳細</a>
+
    
 
 

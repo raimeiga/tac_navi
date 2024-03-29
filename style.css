@@ -71,11 +71,11 @@ body {
   text-decoration: none;
 }
 
-/* ヘッダーナビのホバー時に下線が左から右へ走るしくみ */
 #header_navi_01 a:hover {
   color: #38A1DB; /* 文字色 */  
 }
 
+/* ヘッダーナビのホバー時に下線が左から右へ走るしくみ */
 .animate-border-link {
   text-decoration: none; /* デフォルトの下線を非表示にする */  
   color: #38A1DB; /* 文字色 */
@@ -90,9 +90,11 @@ body {
   background-size: 100% 1px; /* 線の横幅を100%にする */
 }
 
+#footer_navi a:hover {
+  border-bottom: 1px solid;
+}
 
 /* ヘッダーナビのホバー時に下線が左から右へ走るしくみ ここまで*/
-
 
 
 /* フッターここから */
@@ -391,11 +393,10 @@ body {
   /* 事業内容  ここまで */
 
 
-
   /* 当社の強み  ここから */
   #advantage {
     width: 100%;
-    height: 1500px;
+    height: 792px;
     background: #fff;
     border: 1px solid;
   }
@@ -482,6 +483,43 @@ body {
     margin-right: auto;    
   }
    /* 当社の強み  ここまで */
+
+/* 新着情報・お知らせ */
+#news {
+width: 100%;
+height: 700px;
+}
+
+#news h3 {
+  color: #444444;
+  font-size: 24px;
+  font-family: Noto Sans JP;
+  font-weight: 500;
+}
+
+/* 左右に横線をうまく引く設定 */
+.title-news {
+  align-items: center; /* 横線を上下中央 */
+  display: flex; /* 文字と横線を横並び */
+  justify-content: center; /* 文字を中央寄せ */
+}
+
+.title-news::before,
+.title-news::after {
+  background-color: #0B368C; /* 横線の色 */
+  content: "";
+  height: 3px; /* 横線の高さ */
+  width: 300px; /* 横線の長さ */
+}
+.title-news::before {
+  margin-right: 15px; /* 文字との余白 */
+}
+.title-news::after {
+  margin-left: 15px; /* 文字との余白 */
+}
+
+
+
 
 
   

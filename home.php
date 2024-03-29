@@ -75,7 +75,6 @@
                  豊富な経験とノウハウに基づいた最適な提案で、業務効率を大幅に向上させ、顧客満足度向上に貢献。
               </p>
             </div>
-
            
             <div id="item_02">
               <h1>02</h1>
@@ -97,9 +96,8 @@
         </section>
         <h1 class="space_px"><!-- 単なるスペース --></h1>
 
-        <section>
-        <h3>新着情報・お知らせ</h3>
-            
+        <section id="news">
+          <h3 class="title-news">新着情報・お知らせ</h3>
         </section>
         
     </main>

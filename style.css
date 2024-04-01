@@ -115,15 +115,19 @@ body {
   width:65px;
   height: 65px;
   margin-top: 16px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 #copyright {
   color: white; 
-  font-size: 16px;  
+  font-size: 12px;  
   font-weight: 400;
-  margin: 0 100px 0 506px;
-  margin-top: 61px;
+  width: 200px;
+  text-align: center;
+  margin-top: 69px;
+  margin-left: 412.5px;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 #footer_navi {
@@ -131,8 +135,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-self: flex-start; 
-  width: 358px;
-  margin: 37.28px 0 0 128px;  
+  width: 400px;
+  margin: 38px 15px 0 128px;  
   }
 
   #footer_navi a {
@@ -140,6 +144,7 @@ body {
     font-weight: 400;
     color: white; 
     text-decoration: none;
+    margin: 0 15px;
   }
 
   /* フッターーはこここまで */

@@ -29,9 +29,9 @@
         <p id="company_name">Tac+NAVI</p>
         <nav id="header_navi_01">       
            <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
-           <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
            <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
            <a href="<?php echo esc_url(home_url('/page/company/')); ?>" class="animate-border-link">会社情報</a>
+           <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
            <!-- ↑　↓　会社情報のページに遷移するように、URLを書く。会社情報と問い合わせだから、固定ページかな。。。 -->
         </nav>
         <div id="header_navi_02">

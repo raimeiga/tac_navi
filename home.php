@@ -50,7 +50,7 @@
 
                 <div id="seminar_explain01">
                     <img class="check_mark" src="<?php echo get_template_directory_uri();?>/images/check-mark.png">
-                    <p>データ分析に基づいて、最適で実現可能なデジタル戦略を策定。</p>
+                    <p>データ分析に基づいて、最適で実現可能<br>なデジタル戦略を策定。</p>
                 </div>
 
                 <div id="seminar_explain02">

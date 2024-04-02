@@ -209,7 +209,7 @@ body {
     margin: 0;
   }
 
-  /* メインビジュアル　ここまで */
+/* メインビジュアル　ここまで */
   
 
 /* 事業内容  ここから */
@@ -528,13 +528,8 @@ height: 700px;
   margin-left: 15px; /* 文字との余白 */
 }
 
-
-
-
-
-  
+ 
 /* お問い合わせページ　ここから */
-
 #contact-info {
   width: 100%;
   height: 1500px;
@@ -554,7 +549,8 @@ height: 700px;
 }
 
 /* お問い合わせページのタイトル */
-#title-contact_j {   
+#title-contact_j,
+#title-news_detail_j {   
   text-align: center;
   color: #fff;
   font-size: 42px;
@@ -594,6 +590,7 @@ height: 700px;
 /* お知らせ一覧ページのタイトル 英*/
 /* 会社情報ページのタイトル 英*/
 #title-news_press_e,
+#title-news_detail_e,
 #title-company_e {
   text-align: center;
   color: #fff;
@@ -610,7 +607,10 @@ height: 700px;
   display: inline-block;
 }
 
-#rumb_01 {
+#rumb_01,
+#news-company_01,
+#news-rumb_01,
+#news_detail-rumb_01 {
   color: #444444;
 }
 
@@ -618,9 +618,42 @@ height: 700px;
   color: #38A1DB; /* 文字色 */  
 }
 
-#rumb_02 {
+#news-rumb_01:hover {
+  color: #38A1DB; /* 文字色 */  
+}
+
+#news_detail-rumb_01:hover {
+  color: #38A1DB; /* 文字色 */  
+}
+
+#rumb_02,
+#news-company_02,
+#news-rumb_02{
   color: #38A1DB;
   text-decoration: none;  
+}
+
+#news_detail-rumb_02 {
+  color: #444444;
+  text-decoration: none;  
+}
+
+#news_detail-rumb_02:hover {
+  color: #38A1DB; /* 文字色 */    
+}
+
+#news_detail-rumb_03 {
+  color: #38A1DB; /* 文字色 */  
+}
+
+.breadcrumb li:nth-child(2)::before {
+  content: '　＞　';
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-align: center;
+  font-size: 1em;
+  color: #444444;
 }
 
 .breadcrumb li:last-child::before {
@@ -846,13 +879,64 @@ td {
 
 /* 会社情報ページ ここまで */
 
-
 /* お知らせ詳細  ここから */
 
+#news_detail_wrapper {
+  display: inline-block;
+}
 
+#slug_and_title{
+  display: flex;
+  justify-content: center;
+  width: 800px;
+}
 
+#news_detail_wrapper span {  
+  width: 100px;
+  font-size: 24px;
+  font-family: Noto Sans JP;
+  font-weight: 400;
+}
 
+#news_detail_wrapper h1 {
+  width: 700px;
+  font-size: 36px;
+  font-family: Noto Sans JP;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1;
+}
 
+#news_detail_wrapper p:nth-child(1) {
+  width: 150px;
+  font-size: 16px;
+  font-family: Noto Sans JP;
+  font-weight: 400;
+}
 
+#news_detail_wrapper p:nth-child(2) {
 
+}
+
+#sidebar-slug_and_title {
+  display: inline-block;
+  width: 350px;
+  font-size: 16px;
+  font-family: Noto Sans JP;
+  font-weight: 400;
+}
+
+#sidebar-slug_and_title a:nth-child(1) {
+  display: inline-block;
+}
+
+#sidebar-slug_and_title span {
+  display: inline-block;
+}
+
+#sidebar-slug_and_title p {
+  display: inline-block;
+  width: 100px;
+  margin: 0 0 0 0;
+}
 /* お知らせ詳細  ここまで*/

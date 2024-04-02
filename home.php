@@ -13,7 +13,6 @@
             </div>
           </div>
         </section>
-
         
         <section id="business">
           <h1 class="space_px"><!-- 単なるスペース --></h1>
@@ -37,11 +36,11 @@
                     <p>デジタル技術を活用した新規事業の企画、既存事業のデジタル化なども支援。</p>
                 </div>
             </div>
-            <img id="chart" src="<?php echo get_template_directory_uri();?>/images/business_chart_01.png">
+            <img id="img-chart" src="<?php echo get_template_directory_uri();?>/images/business_chart_01.png">
           </div>
 
           <div id="business_container_second">
-            <img id="seminar-space" src="<?php echo get_template_directory_uri();?>/images/seminar.png">
+            <img id="img-seminar-space" src="<?php echo get_template_directory_uri();?>/images/seminar.png">
             <div id="seminar_wrapper">
                 <div id="seminar">
                     <img src="<?php echo get_template_directory_uri();?>/images/icon-seminar.png">

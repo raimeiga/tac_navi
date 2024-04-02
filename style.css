@@ -1,5 +1,5 @@
 body {
-    max-width:1200px;
+    max-width: 1200px;
     min-width: 950px;
     height: auto;
     background-color: #fff;
@@ -18,6 +18,7 @@ body {
 #header-box {  
   display: flex;
   align-self: flex-start;
+  justify-content: space-around;
   width: 100%;
   height: 95px;
   background-color: #d4e514;  
@@ -43,19 +44,18 @@ body {
   display: flex;
   justify-content: space-around;
   align-self: flex-start;
-  width: 500px;  
+  width: 30%;  
   padding: 0;
-  margin: 38px 0 35px 343px;
+  margin: 38px 0 35px 25%;
 }
 
 #header_navi_01 a {
   display: inline-block;
   color: #444444;  
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 14px;  
+  font-size: 12px;  
   font-weight: 400;
-  /* width: 90px; */
-  
+  /* width: 90px; */  
   margin-left: 10px;
   text-align: center;
 }
@@ -63,14 +63,14 @@ body {
 #header_navi_02 a { 
   display: inline-block;
   text-align: center;
-  width: 120px;
-  height: 28px;
+  width: 77%;
+  height: 25px;
   padding: 6px 2px 0px 2px;
-  margin: 30px 30px 0px 20px; 
+  margin: 32px 30px 0px 0px; 
   border-radius: 25px;
   background-color: #287199;
   color: white;  
-  font-size: 14px;  
+  font-size: 12px;  
   font-weight: 400;
   font-family: "Noto Sans JP", sans-serif;
   text-decoration: none;
@@ -230,7 +230,8 @@ body {
   /* background-color: #b1c4ce; */
   }
 
-#business h1:nth-child(2),#advantage h1:nth-child(2){
+#business h1:nth-child(2),
+#advantage h1:nth-child(2){
   color: #444444;
   text-shadow: 5px 5px 4px #808080;
   width: 250px;
@@ -247,76 +248,79 @@ body {
   display: flex;  
   justify-content: space-between;
   align-items: flex-start;
-  width:100%;
+  width: 700px;
+  margin: 0 auto;
 }
 
 #business_container_second {
   display: flex;  
   justify-content: space-between;
   align-items: flex-start;
-  width:100%;
+  width: 700px;
+  margin: 90px auto 0 auto;
 }
 
 #digital_wrapper {
   display: inline-block;
-  width: 550px;
+  width: 310px;
   /* background-color: red; */
-  margin-top: 60px;
-  margin-left: 64px;
+  margin-top: 40px;
+  margin-left: 0px;
 }
 
 #seminar_wrapper {
   display: inline-block;  
-  width: 550px;
+  width: 310px;
   /* background-color: red; */
-  margin-top: 130px;
-  margin-right: 30px;
-}
-
-#chart {
-  display: inline-block;
-  width: 500px;
-  margin-right: 65px;
-}
-
-#seminar-space {
-  display: inline-block;
-  width: 500px;
-  margin-top: 107px;
-  margin-left: 90px;
+  margin-top: 0px;
+  margin-left: 0px;
 }
 
 #digital {  
   display: flex;
   justify-content: space-around;
-  width: 480px;
-  margin-left: 15px;
+  align-items: flex-end;
+  width: 270px;
+  margin: 0 auto 30px auto;
+}
+
+#digital img {  
+  width: 27px;
+  height: 25px;
+  margin: 0 0 0 0px;  
 }
 
 #seminar {  
   display: flex;
-  justify-content: space-around;
-  width: 302.5px;
-  margin-left: 76px;  
-}
-
-#digital img {  
-  width: 45px;
-  height: 43px;
-  margin: 0px 0 0 40px;  
+  justify-content: center;
+  width: 270px;
+  margin: 0 auto 30px auto;
 }
 
 #seminar img {  
-  width: 45px;
-  height: 43px;
-  margin: 0px 0 0 40px;  
+  width: 30px;
+  height: 28px;
+  margin: 0 0 0 0px;
+}
+
+#img-chart {
+  display: inline-block;
+  width: 300px;
+  margin-right: 0px;
+}
+
+#img-seminar-space {
+  display: inline-block;
+  width: 300px;
+  margin-right: 0px;
 }
 
 #digital h1:nth-child(2) {  
-  width: 350px;
+  width: 230px;
+  height: 28px;
   color: #0B368C ;
   text-shadow: none;
-  font-size: 40px;  /* 「デジタル戦略策定」 */
+  font-size: 28px;  /* 「デジタル戦略策定」 */
   font-family: "Noto Sans JP", sans-serif;
   font-weight:500;
   padding: 0;
@@ -324,12 +328,13 @@ body {
 }
 
 #seminar h1:nth-child(2) {  
-  width: 170px;
+  width: 130px;
+  height: 28px;
   padding: 0;
   margin: 0;
   color: #0B368C ;
   text-shadow: none;
-  font-size: 40px;  /* 「人材育成」 */
+  font-size: 28px;  /* 「人材育成」 */
   font-family: "Noto Sans JP", sans-serif;
   font-weight:500;
   padding: 0;
@@ -339,64 +344,62 @@ body {
 #digital_explain01 {
   display: flex;
   justify-content: space-between; 
-  width: 541px;  
-  margin-top: 50px;
+  width: 315px;
+  margin-top: 16px;
 }
 
 #seminar_explain01 {
   display: flex;
   justify-content: space-between; 
-  width: 535px;  
-  margin-top: 50px;
-}
-
-.check_mark {
-  width: 26px;
-  height: 26px;
+  width: 315px;
+  margin-top: 16px;
 }
 
 #digital_explain01 p:nth-child(2) {
- width: 490px;
-  font-size: 26px;
-  line-height: 1;
+  width: 315px;
+  font-size: 16px;
   padding: 0;  
   margin:0;  
 }
 
 #seminar_explain01 p:nth-child(2) {
-  width: 500px;
-   font-size: 26px;
-   line-height: 1;
-   padding: 0;  
-   margin:0;  
+  width: 315px;
+  font-size: 16px;
+  padding: 0;  
+  margin:0; 
  }
+
+.check_mark {
+  width: 16px;
+  height: 16px;
+  margin: 5px 8px 0 0;
+}
 
 #digital_explain02 {
   display: flex;
   justify-content: space-between; 
-  width: 541px;  
-  margin-top: 50px;
+  width: 315px;
+  margin-top: 16px;
 }
 
 #seminar_explain02 {
   display: flex;
   justify-content: space-between; 
-  width: 541px;  
-  margin-top: 50px;
+  width: 315px;
+  margin-top: 16px;
 }
 
+
 #digital_explain02 p:nth-child(2) {
-  width: 500px;
-   font-size: 26px;
-   line-height: 1;
+   width: 315px;
+   font-size: 16px;
    padding: 0;  
    margin: 0;  
  }
 
- #seminar_explain02 p:nth-child(2) {
-  width: 500px;
-   font-size: 26px;
-   line-height: 1;
+#seminar_explain02 p:nth-child(2) {
+   width: 315px;
+   font-size: 16px;
    padding: 0;  
    margin: 0;  
  }

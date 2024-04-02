@@ -9,11 +9,17 @@
           <h1 id="title-company_j">会社情報</h1>
           <h2 id="title-company_e">company</h2>
         </div>
-  </section>
+  </section>  
 
-  
+  <section id="overview">  
+  <!-- パンくずリスト  -->
+    <div class="breadcrumb">
+      <ul class="breadcrumbs">
+        <li><a id="news-company_01" href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">Tac＋NAVI　トップページ</a></li>          
+        <li><a id="news-company_02">会社概要</a></li>
+      </ul>
+    </div>
 
-  <section id="overview">     
     <div id="height_100"></div>
     <h1>会社概要</h1>
     <table id="table-overview">

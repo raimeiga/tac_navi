@@ -1,8 +1,5 @@
 <!-- お知らせ詳細ページ --> 
-
-
 <?php get_header();?>  <!-- ← header.phpからヘッダーのコードを呼び出す -->
-
 
 <main>
 <section id="page-news_detail">
@@ -24,6 +21,7 @@
     </div>
     <div id="height_100"></div>
 
+    <div id="wrapper-news_detail_and_sidebar">
     <div id="news_detail_wrapper">
       <div id="slug_and_title">
          <span class="label">
@@ -41,7 +39,7 @@
       <P><?php the_content(); ?></P>  
     </div>
           
-    <div id="sidebar-slug_and_title">
+    <div id="sidebar">
       <h1>お知らせ・新着情報</h1>
         <?php
           //取得したい投稿記事などの条件を引数として渡す
@@ -79,6 +77,7 @@
         <?php endforeach; ?>                
         <!-- 使用した投稿データをリセット -->
         <?php wp_reset_postdata(); ?>
+    </div>
     </div>
 
   

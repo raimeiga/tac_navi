@@ -1,5 +1,5 @@
 body {
-    max-width:1260px;
+    max-width:1200px;
     min-width: 950px;
     height: auto;
     background-color: #fff;
@@ -881,6 +881,12 @@ td {
 
 /* お知らせ詳細  ここから */
 
+
+#wrapper-news_detail_and_sidebar {
+ display: flex;
+ justify-content: center;
+}
+
 #news_detail_wrapper {
   display: inline-block;
 }
@@ -918,7 +924,7 @@ td {
 
 }
 
-#sidebar-slug_and_title {
+#sidebar {
   display: inline-block;
   width: 350px;
   font-size: 16px;
@@ -926,15 +932,15 @@ td {
   font-weight: 400;
 }
 
-#sidebar-slug_and_title a:nth-child(1) {
+#sidebar a:nth-child(1) {
   display: inline-block;
 }
 
-#sidebar-slug_and_title span {
+#sidebar span {
   display: inline-block;
 }
 
-#sidebar-slug_and_title p {
+#sidebar p {
   display: inline-block;
   width: 100px;
   margin: 0 0 0 0;

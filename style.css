@@ -303,12 +303,7 @@ body {
   margin: 0 0 0 0px;
 }
 
-#img-chart {
-  display: inline-block;
-  width: 300px;
-  margin-right: 0px;
-}
-
+#img-chart,
 #img-seminar-space {
   display: inline-block;
   width: 300px;
@@ -341,13 +336,7 @@ body {
   margin: 0;
 }
 
-#digital_explain01 {
-  display: flex;
-  justify-content: space-between; 
-  width: 315px;
-  margin-top: 16px;
-}
-
+#digital_explain01,
 #seminar_explain01 {
   display: flex;
   justify-content: space-between; 
@@ -355,19 +344,13 @@ body {
   margin-top: 16px;
 }
 
-#digital_explain01 p:nth-child(2) {
+#digital_explain01 p:nth-child(2),
+#seminar_explain01 p:nth-child(2) {
   width: 315px;
   font-size: 16px;
   padding: 0;  
   margin:0;  
 }
-
-#seminar_explain01 p:nth-child(2) {
-  width: 315px;
-  font-size: 16px;
-  padding: 0;  
-  margin:0; 
- }
 
 .check_mark {
   width: 16px;
@@ -375,13 +358,7 @@ body {
   margin: 5px 8px 0 0;
 }
 
-#digital_explain02 {
-  display: flex;
-  justify-content: space-between; 
-  width: 315px;
-  margin-top: 16px;
-}
-
+#digital_explain02,
 #seminar_explain02 {
   display: flex;
   justify-content: space-between; 
@@ -390,19 +367,15 @@ body {
 }
 
 
-#digital_explain02 p:nth-child(2) {
-   width: 315px;
-   font-size: 16px;
-   padding: 0;  
-   margin: 0;  
- }
-
+#digital_explain02 p:nth-child(2),
 #seminar_explain02 p:nth-child(2) {
    width: 315px;
    font-size: 16px;
    padding: 0;  
    margin: 0;  
  }
+
+
   /* 事業内容  ここまで */
 
 
@@ -422,7 +395,7 @@ body {
   #item_01,
   #item_02,
   #item_03 {
-    width: 374px;
+    width: 280px;
     height: 560px;
     border: 3px solid;
     border-color: #38A1DB;
@@ -438,7 +411,7 @@ body {
     text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);  /* テキストを斜体にするプロパティ */    
     transform: skewX(-27deg);
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 50px;  
+    font-size: 40px;  
     font-weight: 600;
     padding: 0;
     margin: 8px 0 0 15px;   
@@ -449,7 +422,7 @@ body {
     width: auto;
     height: auto;  
     padding: 0;
-    margin: 27px 0 60px 98px;    
+    margin: 27px 0 60px 62px;    
     line-height: 1;    
   }
 
@@ -457,7 +430,7 @@ body {
     width: 90px;
     height: 107px;  
     padding: 0;
-    margin: 9px 0 63px 145px;    
+    margin: 9px 0 63px 100px;    
     line-height: 1;  
   }
 
@@ -465,32 +438,45 @@ body {
     width: 90px;
     height: 107px;  
     padding: 0;
-    margin: 9px 0 63px 145px;    
+    margin: 9px 0 63px 100px;    
     line-height: 1;  
   }
-
 
   #item_01 > h3,
   #item_02 > h3,
   #item_03 > h3 {
-    width: 288px;
+    width: 230px;
     height: 70px;
     color: #287199;
+    text-align: left;
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 24px;  
+    font-size: 20px;  
     font-weight: 500;
     padding: 0;
-    margin: 0 auto;    
+    margin: 0 23px 0 31px;    
+  }
+
+  #item_03 > h3 {
+    width: 230px;
+    height: 70px;
+    color: #287199;
+    text-align: left;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 20px;  
+    font-weight: 500;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
   }
 
   #item_01 > p,
   #item_02 > p,
   #item_03 > p {
-    width: 285px;
+    width: 250px;
     height: 161px;
     color: #444444;
     font-family: "Noto Sans JP", sans-serif;
-    font-size: 16px;  
+    font-size: 14px;  
     font-weight: 400;
     margin-left: auto;
     margin-right: auto;    

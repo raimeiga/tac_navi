@@ -10,12 +10,16 @@
         </div>
   </section>
 
-<a>これはテスト用リンク</a>
-<a href="<?php echo esc_url(home_url('/single/')); ?>" class="animate-border-link">お知らせ詳細</a>
-                                       <!-- ↑ ここには、個別の記事がもつURLを入れる。スラッグ名を取得する関数を用いるのかな。。。 -->
-<?php echo "<br><br>"; ?>  
-
 <section id="news-area">  
+  <!-- パンくずリスト  -->
+  <div class="breadcrumb">
+     <ul class="breadcrumbs">
+       <li><a id="news-rumb_01" href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">Tac＋NAVI　トップページ</a></li>          
+       <li><a  id="news-rumb_02">お知らせ・新着情報</a></li>
+     </ul>
+  </div>
+  <div id="height_100"></div>
+
   <div id="news-wrapper">  
     <?php
       //取得したい投稿記事などの条件を引数として渡す
@@ -57,13 +61,11 @@
       </a>
       
       <?php echo "<br><br>"; ?>
-
       <?php endforeach; ?>
-       
-       
+              
       <!-- 使用した投稿データをリセット -->
       <?php wp_reset_postdata(); ?>
-    </div>
+  </div>
 </section>
 
    <h1 class="space_px"><!-- 単なるスペース --></h1>

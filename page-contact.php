@@ -10,16 +10,14 @@
       </div>
    </section>
 
-   
    <section id="contact-info">
       <!-- パンくずリスト  -->
       <div class="breadcrumb">
         <ul class="breadcrumbs">
           <li><a id="rumb_01" href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">Tac＋NAVI　トップページ</a></li>          
-          <li><a  id="rumb_02" href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a></li>
+          <li><a  id="rumb_02">お問い合わせ</a></li>
         </ul>
-      </div>
-      
+      </div>      
 
       <div id="contact-info_container">
         <form>  
@@ -69,11 +67,5 @@
       </div>    
    </section>
 </main>
-
-
-
-
-
-
 
 <?php get_footer(); ?>    <!-- ← footer.phpからヘッダーのコードを呼び出す -->

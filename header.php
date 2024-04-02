@@ -23,20 +23,22 @@
       <div id="line-top"></div> <!-- トップの青い線 -->
       <div id="header-box">                
         <!-- ロゴをクリックすると、トップページのトップに遷移するようロゴにリンクを設定 -->
-        <a href="<?php echo esc_url(home_url()); ?>#">  
-            <img id="header_rogo" src="<?php echo get_template_directory_uri();?>/images/header_rogo.jpg" alt="ヘッダーロゴ">
-        </a>   
-        <p id="company_name">Tac+NAVI</p>
-        <nav id="header_navi_01">       
-           <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
-           <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
-           <a href="<?php echo esc_url(home_url('/page/company/')); ?>" class="animate-border-link">会社情報</a>
-           <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
-           <!-- ↑　↓　会社情報のページに遷移するように、URLを書く。会社情報と問い合わせだから、固定ページかな。。。 -->
-        </nav>
-        <div id="header_navi_02">
-          <a href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
-        </div> 
+        <div id="logo_company_name">
+          <a href="<?php echo esc_url(home_url()); ?>#">  
+              <img id="header_logo" src="<?php echo get_template_directory_uri();?>/images/header_logo.jpg" alt="ヘッダーロゴ">
+          </a>   
+          <p id="company_name">Tac+NAVI</p>
+        </div>
+
+        <div id="header_navi">
+           <nav id="navi">       
+              <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
+              <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
+              <a href="<?php echo esc_url(home_url('/page/company/')); ?>" class="animate-border-link">会社情報</a>
+              <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
+              <!-- ↑　↓　会社情報のページに遷移するように、URLを書く。会社情報と問い合わせだから、固定ページかな。。。 -->
+           </nav>
+           <a id="nav-contact" href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
         </div> 
       </div>
     </header>

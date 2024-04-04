@@ -30,8 +30,9 @@
           </a>   
           <p id="company_name">Tac+NAVI</p>
         </div>
-
-        <!-- <div id="header_navi">
+        
+        <!-- PC用ナビ -->
+        <div id="header_navi">
            <nav id="navi">       
               <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
               <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
@@ -39,6 +40,10 @@
               <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
            </nav>
            <a id="nav-contact" href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
-        </div>  -->
+        </div>
+        
+        <!-- SP用メニューボタン -->
+        <img id="sp-menu" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="スマホ用メニュー">
+
       </div>
     </header>

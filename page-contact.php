@@ -15,7 +15,7 @@
       <div class="breadcrumb">
         <ul class="breadcrumbs">
           <li><a id="rumb_01" href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">Tac＋NAVI　トップページ</a></li>          
-          <li><a  id="rumb_02">お問い合わせ</a></li>
+          <li><a id="rumb_02">お問い合わせ</a></li>
         </ul>
       </div>      
 
@@ -25,27 +25,27 @@
                担当者よりご連絡いたします。
             </p>
             <label class="required-item">必須</label>
-            <label class="item-name">会社名　　　　　　　　　</label>
+            <label class="item-name">会社名　　　　　　　</label>
             <input class="input_field" type="text" placeholder=" 例）tactics  navigater  株式会社"> 
             <br>  
 
             <label class="any-item">任意</label>
-            <label class="item-name">担当者役職　　　　　　　</label>
+            <label class="item-name">担当者役職　　　　　</label>
             <input class="input_field" type="text" > 
             <br>  
 
             <label class="required-item">必須</label>
-            <label class="item-name">担当者名　　　　　　　　</label>
+            <label class="item-name">担当者名　　　　　　</label>
             <input class="input_field" type="text" placeholder=" 例）山田  太郎"> 
             <br>  
 
             <label class="required-item">必須</label>
-            <label class="item-name">電話番号　　　　　　　　</label>
+            <label class="item-name">電話番号　　　　　　</label>
             <input class="input_field" type="text" placeholder="  例）000-0000-0000"> 
             <br>  
 
             <label class="required-item">必須</label>
-            <label class="item-name">メールアドレス　　　　　</label>
+            <label class="item-name">メールアドレス　　　</label>
             <input class="input_field" type="text" placeholder=" 例）sample.samurai.com"> 
             <br>  
 

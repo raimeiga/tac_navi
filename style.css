@@ -492,7 +492,7 @@ body {
   }
    /* 当社の強み  ここまで */
 
-/* 新着情報・お知らせ */
+/* 新着情報・お知らせ ここから*/
 #news {
 width: 100%;
 height: 700px;
@@ -503,6 +503,7 @@ height: 700px;
   font-size: 24px;
   font-family: Noto Sans JP;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
 /* 左右に横線をうまく引く設定 */
@@ -526,12 +527,20 @@ height: 700px;
   margin-left: 15px; /* 文字との余白 */
 }
 
+.space_50px {
+  height: 50px;
+  margin: 0;
+}
+
 #news-container {
+  width: 100%;
+}
+
+#news-item {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 
 /* カテゴリー名 */
@@ -546,7 +555,7 @@ height: 700px;
   border-radius: 5px;
   width: 42px;
   height: 19px;
-  margin: 0 12px 0 0; 
+  margin: 0 0 0 0; 
 }
  
 #news_and_info_date {
@@ -554,7 +563,7 @@ height: 700px;
   font-size: 14px;
   font-family: Noto Sans JP;
   font-weight: 400;  
-  margin: 0 auto;
+  margin: 0 0 0 12px;
 }
 
 #news_and_info_title {
@@ -564,14 +573,13 @@ height: 700px;
   font-size: 18px;
   font-family: Noto Sans JP;
   font-weight: 400;  
-  margin: 0 auto 8px auto;
+  margin: 0 0 8px 0;
 }
-
 
 #news_and_info_link p:hover {
   color: #38A1DB  ;
   font-weight: bold;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 
 #news_and_info_content {
@@ -587,9 +595,8 @@ height: 700px;
 .news_and_info_line {  
   background-color: #AFCCDB;
   height: 1px; /* 横線の高さ */
-  width:800px; /* 横線の長さ */
-  margin-left: auto;
-  margin-right: auto;
+  width: 800px; /* 横線の長さ */
+  margin: 50px auto;
 }
 
 /* お問い合わせページ　ここから */
@@ -851,23 +858,65 @@ form label {
 /* お問い合わせページ  ここまで */
 
 
-/* お知らせ一覧ページ */
-#news_press {
-  font-size: 30px;
+/* お知らせ一覧ページ 　ここから*/
+.space_30px {
+  height: 30px;
 }
 
-.before-icon {
- padding: 10px 0 0 0;
- margin: 0;
+#news-wrapper {
+  width: 660px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.to_detail { 
- width: 16px;
- height: 16px;
- margin: 0;
- padding: 0;
- line-height: 1px;
+.news_and_press_line {  
+  background-color: #AFCCDB;
+  height: 1px; /* 横線の高さ */
+  width: 660px; /* 横線の長さ */
+  margin: 40px auto;
 }
+
+/* カテゴリー名 */
+#news_and_press_category {
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  font-family: Noto Sans JP;
+  font-weight: 400;  
+  background-color: #287199;  
+  border-radius: 5px;
+  width: 42px;
+  height: 18.5px;
+  margin: 0 36px 0 0px;
+}
+
+
+#news_and_press_date {
+  display: inline-block;  
+  font-size: 14px;
+  font-family: Noto Sans JP;
+  font-weight: 400;  
+  margin: 0 36px 0 0;
+}
+
+#news_and_press_title {
+  display: inline-block;   
+  color: #444444; 
+  text-decoration: none;
+  font-size: 16px;
+  font-family: Noto Sans JP;
+  font-weight: 400;  
+  margin: 0 auto 0px auto;
+}
+
+#news_and_press_link p:hover {
+  color: #38A1DB  ;
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+
 
 /* 会社情報ページ ここから */
 #table-overview {
@@ -1016,31 +1065,32 @@ td {
   margin: 0 0 0 4px;
 }
 
-
-
 /* 本文 */
 #news_detail_wrapper p:nth-child(2) {
 
 }
 
+
 /* sidebarの箱 */
 #sidebar {
   display: inline-block;
-  width: 25%;  
+  width: 35%;  
   margin-right: 50px;
 }
 
-/*「お知らせ・新着情報」*/
+/*「お知らせ・新着情報」の表記*/
 #sidebar h3 {
   width: 100%;
-  font-size: 15px;
+  font-size: 13px;
   font-family: Noto Sans JP;
   font-weight: 400;
   margin-top: 0;
+  margin-bottom: 30px;
 }
 
 /* 左右に横線をうまく引く設定 */
 #sidebar-news {
+  width: 100%;
   align-items: center; /* 横線を上下中央 */
   display: flex; /* 文字と横線を横並び */
   justify-content: center; /* 文字を中央寄せ */
@@ -1051,7 +1101,7 @@ td {
   background-color: #0B368C; /* 横線の色 */
   content: "";
   height: 2px; /* 横線の高さ */
-  width: 60px; /* 横線の長さ */
+  width: 25%; /* 横線の長さ */
 }
 #sidebar-news::before {
   margin-right: 4px; /* 文字との余白 */
@@ -1061,13 +1111,12 @@ td {
 }
 
 #posts {
-  display: inline-block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 13px;
   font-family: Noto Sans JP;
   font-weight: 400;
-}
-
-#sidebar-category-and-date {
 }
 
 /* カテゴリー名 */
@@ -1089,18 +1138,32 @@ td {
 #sidebar-date {
   display: inline-block;
   width: 100px;
-  margin: 0 0 0 0;
-}
+  margin: 0;
+ }
 
 /* タイトル */
-#sidebar-link-title {
- text-decoration: none;
+
+#sidebar-link-title-child {
+  margin-top: 5px;
+}
+
+#span_01 {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0;
+}
+
+#span_02:hover {
+  color: #38A1DB;
+  font-weight: bold;  
+  margin: 0;
 }
 
 #sidebar-line {
   background-color: #AFCCDB;
   height: 1px; /* 横線の高さ */
   width: 100%; /* 横線の長さ */
+  margin: 31px 0 33px 0;  
 }
 
 /* .news-bg-color {

@@ -97,11 +97,15 @@
             </div>
             
             <a id="sidebar-link-title" href="<?php echo get_permalink(); ?>" >   <!-- リンク -->
-               <?php the_title(); ?> <!-- タイトル -->
+                <!-- <p id="sidebar-link-title-child_01"></p> -->
+                <p id="sidebar-link-title-child">
+                  <span id="span_01">≫</span>  
+                  <span id="span_02"><?php the_title(); ?></span> <!-- タイトル -->
+                </p>                
             </a>
-            <br><br>
+            
             <p id="sidebar-line"><!-- 投稿を仕切るための直線 --></p>            
-            <br> 
+            
         <?php endforeach; ?>                
         <!-- 使用した投稿データをリセット -->
         <?php wp_reset_postdata(); ?>

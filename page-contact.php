@@ -1,7 +1,5 @@
 <!-- お問い合わせページ -->
-
 <?php get_header();?>  <!-- ← header.phpからヘッダーのコードを呼び出す -->
-
 <main>
    <section id="page-contact">
       <div class="wrapper">

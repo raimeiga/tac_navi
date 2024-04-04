@@ -48,18 +48,14 @@
         ?>
       </span>      
       
-      <!-- 投稿の日付を表示 -->
-      <?php echo get_the_date(); 
-       echo "　";  ?>                
-      <!-- 投稿のタイトルを表示 -->
-      <?php the_title();
-       ?>
-
-      <!-- aタグでアイコンを囲い、投稿記事へのリンクにする -->
-      <a class="before-icon" href="<?php echo get_permalink(); ?>">
-        <img class="to_detail" src="<?php echo get_template_directory_uri();?>/images/icon-news_and_press.png">
+      <a id="news_and_press" href="<?php echo get_permalink(); ?>">
+          <!-- 投稿の日付を表示 -->
+          <?php echo get_the_date(); 
+          echo "　";  ?>                
+          <!-- 投稿のタイトルを表示 -->
+          <?php the_title(); ?>
       </a>
-      
+    
       <?php echo "<br><br>"; ?>
       <?php endforeach; ?>
               

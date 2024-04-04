@@ -9,6 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/responsive.css" />
   
 
     <!-- ↓ ここでGoogle Fontsを読み込みます -->
@@ -28,6 +29,7 @@
               <img id="header_logo" src="<?php echo get_template_directory_uri();?>/images/header_logo.jpg" alt="ヘッダーロゴ">
           </a>   
           <p id="company_name">Tac+NAVI</p>
+          <p id="company_name_02">Tac+NAVI</p>
         </div>
 
         <div id="header_navi">

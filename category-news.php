@@ -18,8 +18,9 @@
        <li><a  id="news-rumb_02">お知らせ・新着情報</a></li>
      </ul>
   </div>
-  <div id="height_100"></div>
-
+  
+  <h1 class="space_30px"><!-- 単なるスペース --></h1>
+  <p class="news_and_press_line"><!-- 投稿を仕切るための直線 --></p>     
   <div id="news-wrapper">  
     <?php
       //取得したい投稿記事などの条件を引数として渡す
@@ -38,8 +39,9 @@
       <?php foreach($posts as $post): ?>
       <!-- 投稿データをセット -->
       <?php setup_postdata($post); ?>
+
       <!-- カテゴリー名を取得　テラコヤのAI先生より提供 -->
-      <span class="label">
+      <span id="news_and_press_category">
         <?php
           $categories = get_the_category(); // 現在の投稿に割り当てられたカテゴリーを取得
               if ( ! empty( $categories ) ) {
@@ -47,24 +49,25 @@
               };echo "　";
         ?>
       </span>      
-      
-      <a id="news_and_press" href="<?php echo get_permalink(); ?>">
-          <!-- 投稿の日付を表示 -->
-          <?php echo get_the_date(); 
-          echo "　";  ?>                
-          <!-- 投稿のタイトルを表示 -->
-          <?php the_title(); ?>
+      <!-- 投稿の日付を表示 -->
+      <p id="news_and_press_date"><?php echo get_the_date(); 
+           echo "　";  ?>      
+      </p>          
+
+      <!-- ↓　タイトル・本文をクリック後、お知らせ詳細ページに遷移するリンク -->
+
+      <a id="news_and_press_link" href="<?php echo get_permalink(); ?>">
+        <!-- 投稿のタイトルを表示 -->
+        <p id="news_and_press_title"><?php the_title(); ?></p>
       </a>
-    
-      <?php echo "<br><br>"; ?>
-      <?php endforeach; ?>
-              
+      
+      <p class="news_and_press_line"><!-- 投稿を仕切るための直線 --></p>     
+      <?php endforeach; ?>    
       <!-- 使用した投稿データをリセット -->
       <?php wp_reset_postdata(); ?>
   </div>
 </section>
-
-   <h1 class="space_px"><!-- 単なるスペース --></h1>
+<h1 class="space_px"><!-- 単なるスペース --></h1>
 </main>
 
 

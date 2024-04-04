@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 </head>
-
+  
 <body>
     <header>
       <div id="line-top"></div> <!-- トップの青い線 -->
@@ -29,18 +29,16 @@
               <img id="header_logo" src="<?php echo get_template_directory_uri();?>/images/header_logo.jpg" alt="ヘッダーロゴ">
           </a>   
           <p id="company_name">Tac+NAVI</p>
-          <p id="company_name_02">Tac+NAVI</p>
         </div>
 
-        <div id="header_navi">
+        <!-- <div id="header_navi">
            <nav id="navi">       
               <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
               <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
               <a href="<?php echo esc_url(home_url('/page/company/')); ?>" class="animate-border-link">会社情報</a>
               <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
-              <!-- ↑　↓　会社情報のページに遷移するように、URLを書く。会社情報と問い合わせだから、固定ページかな。。。 -->
            </nav>
            <a id="nav-contact" href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
-        </div> 
+        </div>  -->
       </div>
     </header>

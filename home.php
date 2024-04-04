@@ -97,7 +97,8 @@
 
         <section id="news">
           <h3 class="title-news">新着情報・お知らせ</h3>
-          <p class="news_and_info_line"><!-- 投稿を仕切るための直線 --></p>
+          <h1 class="space_50px"><!-- 単なるスペース --></h1>
+          <p class="news_and_info_line"><!-- 投稿を仕切るための直線 --></p>     
           <div id="news-container">
             <div id="news-item">
               <?php

@@ -132,14 +132,17 @@
                     <?php echo get_the_date();
                       echo "　";  
                     ?>
-                  </p>     
-                <a id="news_and_info_link" href="<?php echo get_permalink(); ?>">           
-                  <!-- ↓　投稿のタイトルを表示 -->
-                  <p id="news_and_info_title"><?php the_title();?></p>
-                  <br>
-                  <!-- ↓　本文 -->
-                  <p id="news_and_info_content"><?php echo wp_trim_words( get_the_content(), 55, '…' ); ?></p>         
-                </a>
+                  </p>    
+                
+                  <!-- ↓　タイトル・本文をクリック後、お知らせ詳細ページに遷移するリンク -->
+                  <a id="news_and_info_link" href="<?php echo get_permalink(); ?>">           
+                    <!-- ↓　投稿のタイトルを表示 -->
+                    <p id="news_and_info_title"><?php the_title();?></p>
+                    <br>
+                    <!-- ↓　本文 -->
+                    <p id="news_and_info_content"><?php echo wp_trim_words( get_the_content(), 65, '…' ); ?></p>         
+                  </a>
+
                 <p class="news_and_info_line"><!-- 投稿を仕切るための直線 --></p>     
                 
                 <?php endforeach; ?>                       

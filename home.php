@@ -117,6 +117,7 @@
                 <?php foreach($posts as $post): ?>
                 <!-- 投稿データをセット -->
                 <?php setup_postdata($post); ?>
+                
                 <!-- カテゴリー名を取得　テラコヤのAI先生より提供 -->
                 <span id="news_and_info_category">
                   <?php
@@ -125,16 +126,14 @@
                             echo esc_html( $categories[0]->name ); // 最初のカテゴリー名を表示
                         };echo "　　";
                   ?>
-                </span>      
-                
-                <!-- 投稿の日付を表示 -->
-                <p id="news_and_info_date">
-                  <?php echo get_the_date();
-                    echo "　";  
-                  ?>
-                </p>
-                
-                <a id="news_and_info_link" href="<?php echo get_permalink(); ?>" >
+                </span>                  
+                  <!-- 投稿の日付を表示 -->
+                  <p id="news_and_info_date">
+                    <?php echo get_the_date();
+                      echo "　";  
+                    ?>
+                  </p>     
+                <a id="news_and_info_link" href="<?php echo get_permalink(); ?>">           
                   <!-- ↓　投稿のタイトルを表示 -->
                   <p id="news_and_info_title"><?php the_title();?></p>
                   <br>
@@ -142,6 +141,7 @@
                   <p id="news_and_info_content"><?php echo wp_trim_words( get_the_content(), 55, '…' ); ?></p>         
                 </a>
                 <p class="news_and_info_line"><!-- 投稿を仕切るための直線 --></p>     
+                
                 <?php endforeach; ?>                       
                 <!-- 使用した投稿データをリセット -->
                 <?php wp_reset_postdata(); ?>  

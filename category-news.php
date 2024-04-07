@@ -40,13 +40,20 @@
       <!-- 投稿データをセット -->
       <?php setup_postdata($post); ?>
 
-      <!-- カテゴリー名を取得　テラコヤのAI先生より提供 -->
-      <span id="news_and_press_category">
+      <!-- カテゴリー名を取得　増井先生より提供 -->
+      <?php 
+        $categories = get_the_category(); 
+        if ( ! empty( $categories ) ) {
+          $category_name = $categories[0]->name;
+          $class_name = $categories[0]->slug."-color";
+        };
+      ?>      
+      <span id="news_and_press_category" class="<?php echo $class_name; ?>">
         <?php
-          $categories = get_the_category(); // 現在の投稿に割り当てられたカテゴリーを取得
-              if ( ! empty( $categories ) ) {
-                  echo esc_html( $categories[0]->name ); // 最初のカテゴリー名を表示
-              };echo "　";
+          if ( ! empty( $categories ) ) {
+            echo esc_html( $category_name); // 最初のカテゴリー名を表示
+            echo "　";
+          };
         ?>
       </span>      
       <!-- 投稿の日付を表示 -->

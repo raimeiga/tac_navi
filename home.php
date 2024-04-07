@@ -65,7 +65,7 @@
           <h1>当社の強み</h1>
           <h1 class="space_px"><!-- 単なるスペース --></h1>
 
-          <div id="advantage_container">
+          <div id="advantage_container">  
             <div id="item_01">
               <h1>01</h1>
               <img src="<?php echo get_template_directory_uri();?>/images/icon-pc2.png">
@@ -75,7 +75,7 @@
             </div>
             
             <!-- スマホ用div -->
-            <div id="sp-item_01">
+            <div class="sp-item">
               <div class="sp-item_child">
                 <h1>01</h1>
                 <h3>業界特化型ソリューションによる効率化</h3>
@@ -89,8 +89,17 @@
               <img src="<?php echo get_template_directory_uri();?>/images/icon-talent.png">
               <h3>豊富な経験と専門知識を持つ人材</h3>
               <p>長年の経験と専門知識を持つコンサルタントが、お客様の課題を徹底的に分析し、最適な解決策を提案。</p>
-              <p>幅広い分野の専門家チームが、多角的な視点 で課題解決を支援。</p>
-              
+              <p>幅広い分野の専門家チームが、多角的な視点 で課題解決を支援。</p>              
+            </div>
+
+            <!-- スマホ用div -->
+            <div class="sp-item">
+              <div class="sp-item_child" id="sp-item_child_02">
+                <h1>02</h1>
+                <h3>豊富な経験と専門知識を持つ人材</h3>
+              </div>
+              <p>長年の経験と専門知識を持つコンサルタントが、お客様の課題を徹底的に分析し、最適な解決策を提案。</p>
+              <p>幅広い分野の専門家チームが、多角的な視点 で課題解決を支援。</p>              
             </div>
 
             <div id="item_03">
@@ -98,10 +107,21 @@
               <img src="<?php echo get_template_directory_uri();?>/images/icon-shake_hands.png">
               <h3>顧客満足度95%の実績</h3>
               <p>顧客満足度調査で95%という高い評価を獲得。</p>
-                 顧客との密接なコミュニケーションを重視し、期待以上の成果を提供。</p>
-              
-            </div>     
+                 顧客との密接なコミュニケーションを重視し、期待以上の成果を提供。</p>              
+            </div>  
+            
+            <!-- スマホ用div -->
+            <div class="sp-item">
+              <div class="sp-item_child" id="sp-item_child_03">
+                <h1>03</h1>
+                <h3>顧客満足度95%の実績</h3>
+              </div>
+              <p>顧客満足度調査で95%という高い評価を獲得。</p>
+              <p>顧客との密接なコミュニケーションを重視し、期待以上の成果を提供。</p>              
+            </div>
+
         </section>
+
         <h1 class="space_px"><!-- 単なるスペース --></h1>
 
         <section id="news">
@@ -155,8 +175,11 @@
                     <!-- ↓　投稿のタイトルを表示 -->
                     <p id="news_and_info_title"><?php the_title();?></p>
                     <br>
-                    <!-- ↓　本文 -->
+                    <!-- ↓　本文 何文字まで見せるかをwp_trim_wordsの引数に設定-->
+                    <!-- PC用 -->
                     <p id="news_and_info_content"><?php echo wp_trim_words( get_the_content(), 65, '…' ); ?></p>         
+                    <!-- SP用 -->
+                    <p id="sp-news_and_info_content"><?php echo wp_trim_words( get_the_content(), 52, '…' ); ?></p>         
                   </a>
                   <p class="news_and_info_line"><!-- 投稿を仕切るための直線 --></p>     
                 

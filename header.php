@@ -26,7 +26,7 @@
         <!-- ロゴをクリックすると、トップページのトップに遷移するようロゴにリンクを設定 -->
         <div class="logo-and-company_name">
           <a href="<?php echo esc_url(home_url()); ?>#">  
-              <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/header_logo.jpg" alt="ヘッダーロゴ">
+              <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/skyblue_logo.jpg" alt="ヘッダーロゴ">
           </a>   
           <p class="company_name">Tac+NAVI</p>
         </div>
@@ -49,15 +49,17 @@
       <div id="tab-menu">
       <div class="logo-and-company_name">
           <a href="<?php echo esc_url(home_url()); ?>#">  
-              <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/header_logo.jpg" alt="ヘッダーロゴ">
+            <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/white_logo.jpg" alt="ヘッダーロゴ">
           </a>   
           <p class="company_name">Tac+NAVI</p>
         </div> 
-        <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
-        <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
-        <a href="<?php echo esc_url(home_url('/page/company/')); ?>" class="animate-border-link">会社情報</a>
-        <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
-        <a href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
+        <nav id="tab-navi"> 
+          <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
+          <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
+          <a href="<?php echo esc_url(home_url('/page/company/')); ?>" class="animate-border-link">会社情報</a>
+          <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
+          <a href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
+        </nav>
       </div>
 
 

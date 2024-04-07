@@ -3,7 +3,7 @@
       <div id="footer-logo-navi">    
         <!-- ロゴをクリックすると、トップページのトップに遷移するようロゴにリンクを設定 -->
         <a href="<?php echo esc_url(home_url()); ?>#">  
-              <img id="footer_logo" src="<?php echo get_template_directory_uri();?>/images/footer_logo.jpg" alt="フッターロゴ">
+              <img id="footer_logo" src="<?php echo get_template_directory_uri();?>/images/white_logo.jpg" alt="フッターロゴ">
         </a>         
         <nav id="footer_navi">             
            <a href="<?php echo esc_url(home_url()); ?>#business" >事業内容</a>

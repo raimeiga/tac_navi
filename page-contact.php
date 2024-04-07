@@ -19,9 +19,15 @@
 
       <div id="contact-info_container">
         <form>  
-            <p>コンサルティングサービスに関するご依頼やご相談などは、下記フォームよりお問い合わせください。<br>
+            <p id="top-sentence">コンサルティングサービスに関するご依頼やご相談などは、下記フォームよりお問い合わせください。<br>
                担当者よりご連絡いたします。
             </p>
+            
+            <!-- tab用　<br>をなくしてある -->
+            <p id="tab-top-sentence">コンサルティングサービスに関するご依頼やご相談などは、下記フォームよりお問い合わせください。
+               担当者よりご連絡いたします。
+            </p>
+
             <label class="required-item">必須</label>
             <label class="item-name">会社名　　　　　　　</label>
             <input class="input_field" type="text" placeholder=" 例）tactics  navigater  株式会社"> 

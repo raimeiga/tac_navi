@@ -292,4 +292,17 @@ margin-right: auto;
   margin: 0 auto;
 }
 
+
+/* お問い合わせページ ここから */
+#top-sentence {
+ display: none;
+}
+
+#tab-top-sentence {
+  display: block;
+}
+
+
+
+
 }

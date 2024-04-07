@@ -75,8 +75,8 @@
             </div>
             
             <!-- スマホ用div -->
-            <div class="sp-item">
-              <div class="sp-item_child">
+            <div class="tab-item">
+              <div class="tab-item_child">
                 <h1>01</h1>
                 <h3>業界特化型ソリューションによる効率化</h3>
               </div>
@@ -93,8 +93,8 @@
             </div>
 
             <!-- スマホ用div -->
-            <div class="sp-item">
-              <div class="sp-item_child" id="sp-item_child_02">
+            <div class="tab-item">
+              <div class="tab-item_child" id="tab-item_child_02">
                 <h1>02</h1>
                 <h3>豊富な経験と専門知識を持つ人材</h3>
               </div>
@@ -107,12 +107,12 @@
               <img src="<?php echo get_template_directory_uri();?>/images/icon-shake_hands.png">
               <h3>顧客満足度95%の実績</h3>
               <p>顧客満足度調査で95%という高い評価を獲得。</p>
-                 顧客との密接なコミュニケーションを重視し、期待以上の成果を提供。</p>              
+              <p>顧客との密接なコミュニケーションを重視し、期待以上の成果を提供。</p>              
             </div>  
             
             <!-- スマホ用div -->
-            <div class="sp-item">
-              <div class="sp-item_child" id="sp-item_child_03">
+            <div class="tab-item">
+              <div class="tab-item_child" id="tab-item_child_03">
                 <h1>03</h1>
                 <h3>顧客満足度95%の実績</h3>
               </div>
@@ -178,8 +178,8 @@
                     <!-- ↓　本文 何文字まで見せるかをwp_trim_wordsの引数に設定-->
                     <!-- PC用 -->
                     <p id="news_and_info_content"><?php echo wp_trim_words( get_the_content(), 65, '…' ); ?></p>         
-                    <!-- SP用 -->
-                    <p id="sp-news_and_info_content"><?php echo wp_trim_words( get_the_content(), 52, '…' ); ?></p>         
+                    <!-- tab用 -->
+                    <p id="tab-news_and_info_content"><?php echo wp_trim_words( get_the_content(), 52, '…' ); ?></p>         
                   </a>
                   <p class="news_and_info_line"><!-- 投稿を仕切るための直線 --></p>     
                 

@@ -48,7 +48,7 @@ body {
   /* background-color: blue; */
 }
  
-#sp-menu {
+#tab-menu {
   display: none;
   }
 
@@ -416,7 +416,7 @@ body {
     justify-content: center;
   }
 
-  .sp-item {
+  .tab-item {
     display: none;
   }
 
@@ -597,7 +597,7 @@ height: 700px;
   border-bottom: 2px solid;
 }
 
-#sp-news_and_info_content {
+#tab-news_and_info_content {
   display: none;
 }
 
@@ -921,6 +921,11 @@ td {
   display: inline-block;
   text-decoration: none;
   margin: 0;
+  color: #444444;
+}
+
+#span_02 {
+  color: #444444;
 }
 
 #span_02:hover {

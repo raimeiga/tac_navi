@@ -42,8 +42,8 @@
            <a id="nav-contact" href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
         </div>
         
-        <!-- SP用メニューボタン -->
-        <img id="sp-menu" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="スマホ用メニュー">
+        <!-- タブレット用メニューボタン -->
+        <img id="tab-menu" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="スマホ用メニュー">
 
       </div>
     </header>

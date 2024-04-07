@@ -46,7 +46,7 @@ body {
   /* background-color: blue; */
 }
 
- #sp-menu { 
+ #tab-menu { 
   display: inline-block; /* または必要なスタイルに変更 */
   width: 90px;
   height: 90px;
@@ -192,7 +192,7 @@ margin-right: auto;
   display: none;
 } 
 
-.sp-item {
+.tab-item {
   display: block;
   width: 72%;  
   border: 3px solid;
@@ -200,37 +200,36 @@ margin-right: auto;
   margin: 0 auto 40px auto;
 }
 
-.sp-item_child {
-  height: 40px;
+.tab-item_child {
   display: flex;
   justify-content: center;
   align-items: baseline;
-  margin-top: 20px;
+  margin: 30px auto 30px auto; 
 }
 
-#sp-item_child_02 > h3 {
+#tab-item_child_02 > h3 {
   margin-left: 25px;
 }
 
-#sp-item_child_03 > h3 {
+#tab-item_child_03 > h3 {
   margin-left: 20px;
   margin-right: 40px;
 }
 
-.sp-item_child > h1 { 
- width: 59px;
-    height: 72px;    
-    color: rgba(175, 204, 219, 0.6);   /* テキストのぼかし・シャドウ */
-    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);  /* テキストを斜体にするプロパティ */    
-    transform: skewX(-27deg);
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 32px;  
-    font-weight: 600;
-    padding: 0;  
-    line-height: 1;
+.tab-item_child > h1 { 
+  width: 59px;    
+  color: rgba(175, 204, 219, 0.6);   /* テキストのぼかし・シャドウ */
+  text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);  /* テキストを斜体にするプロパティ */    
+  transform: skewX(-27deg);
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 32px;  
+  font-weight: 600;
+  padding: 0;  
+  line-height: 1;
+  margin: 0;
 }
 
-.sp-item_child > h3 {  
+.tab-item_child > h3 {  
   /* width: 460px; */
   line-height: 1;
   color: #287199;
@@ -244,7 +243,7 @@ margin-right: auto;
   margin: 0 0 0 0;   
  }
 
- .sp-item > p {
+ .tab-item > p {
   display: block;
   width: 76%;
   margin: 20px auto;
@@ -278,11 +277,9 @@ margin-right: auto;
   display: none;
 }
 
-#sp-news_and_info_content {
-  display: block;
-}
 
-#sp-news_and_info_content {
+
+#tab-news_and_info_content {
   display: inline-block;  
   color: #444444; 
   text-decoration: none;

@@ -105,13 +105,8 @@
                     echo "　";
                   };
                 ?>
-              </span>        
-            
-            
-            
-
-
-                <P id="sidebar-date"><?php echo get_the_date(); ?></P>  <!-- 日付 -->
+              </span>            
+              <P id="sidebar-date"><?php echo get_the_date(); ?></P>  <!-- 日付 -->
             </div>
             
             <a id="sidebar-link-title" href="<?php echo get_permalink(); ?>" >   <!-- リンク -->

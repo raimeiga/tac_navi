@@ -24,15 +24,22 @@
   <div id="wrapper-news_detail_and_sidebar">
     <div id="news_detail_wrapper">
       <div id="category_and_title">
-         <span id="news_detail_category-name">   <!-- カテゴリー -->
-           <?php
-               $categories = get_the_category(); // 現在の投稿に割り当てられたカテゴリーを取得
-                 if ( ! empty( $categories ) ) {
-                     echo esc_html( $categories[0]->name ); // 最初のカテゴリー名を表示
-                 };echo "　";
-           ?>
-         </span>
-         <h1><?php the_title(); ?></h1>     <!-- タイトル -->
+        <?php 
+          $categories = get_the_category(); 
+          if ( ! empty( $categories ) ) {
+            $category_name = $categories[0]->name;
+            $class_name = $categories[0]->slug."-color";
+          };
+        ?>      
+        <span id="news_detail_category-name" class="<?php echo $class_name; ?>">
+          <?php
+            if ( ! empty( $categories ) ) {
+              echo esc_html( $category_name); // 最初のカテゴリー名を表示
+              echo "　";
+            };
+          ?>
+        </span>   
+        <h1><?php the_title(); ?></h1>     <!-- タイトル -->
       </div>
       <div id="icon_and_date_wrapper">
         <img id="calender" src="<?php echo get_template_directory_uri();?>/images/icon-calender.png">  <!-- アイコン -->
@@ -50,7 +57,7 @@
       // 抽出した画像のURLを出力する
       if (isset($matches[1])) {
           foreach ($matches[1] as $image_url) {
-              echo '<img id="pe" src="' . $image_url . '" alt="記事内の画像">';
+              echo '<img id="post-img" src="' . $image_url . '" alt="記事内の画像">';
           }
       }      
           ?>  -->

@@ -65,7 +65,7 @@ body {
   align-self: flex-start;
   width: 340px;  
   padding: 0;
-  margin: 38px 15px 35px 210px;
+  margin: 38px 15px 35px 0px;
 }
 
 #navi a {
@@ -183,11 +183,12 @@ body {
     padding-top: 140px;
     margin-left: auto;
     margin-right: auto;
+    font-family: Noto Sans JP;
   }
 
   #copy_01 h1:nth-child(1) {
     display: inline-block;
-    font-size: 148px;
+    font-size: 148px;    
     font-weight: 500;
     color: #0B368C;
     line-height: 1;
@@ -210,6 +211,7 @@ body {
     width: 524px;    
   margin-left: auto;
   margin-right: auto;
+  font-family: Noto Sans JP;
   }
 
   #copy_02 h3:nth-child(1) {
@@ -266,7 +268,7 @@ body {
 #business_container_first {
   display: flex;  
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
 }
@@ -274,21 +276,21 @@ body {
 #business_container_second {
   display: flex;  
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   margin: 60px auto 0 auto;
 }
 
 #digital_wrapper {
   display: inline-block;
-  width: 63%;
+  width: 58%;
   /* background-color: red; */
   margin: 0px 0px 0 0;  
 }
 
 #seminar_wrapper {
   display: inline-block;  
-  width: 63%;
+  width: 58%;
   /* background-color: red; */
   margin-top: 0px;
   margin-left: 0px;
@@ -340,12 +342,14 @@ body {
   display: inline-block;
   width: 16%;
   margin-right: 0px;
+  margin-left: 40px;
 }
 
 #img-seminar-space {
   display: inline-block;
   width: 16%;
   margin-top: 17px;
+  margin-left: 40px;
 }
 
 #seminar h1:nth-child(2) {  
@@ -368,6 +372,7 @@ body {
   justify-content: space-between; 
   width: 100%;
   margin-top: 16px;
+  font-family: "Noto Sans JP"
 }
 
 #digital_explain02,
@@ -376,6 +381,7 @@ body {
   justify-content: space-between; 
   width: 100%;
   margin-top: 16px;
+  font-family: "Noto Sans JP"
 }
 
 #digital_explain01 p:nth-child(2),
@@ -409,6 +415,10 @@ body {
   #advantage_container{
     display: flex;
     justify-content: center;
+  }
+
+  .sp-item {
+    display: none;
   }
 
   #item_01,
@@ -587,6 +597,11 @@ height: 700px;
   font-weight: bold;
   border-bottom: 2px solid;
 }
+
+#sp-news_and_info_content {
+  display: none;
+}
+
 
 #news_and_info_content {
   display: inline-block;  

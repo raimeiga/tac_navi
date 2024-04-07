@@ -56,7 +56,7 @@
             <div id="detail">
                 <label>必須</label>
                 <label>お問い合わせ内容</label>
-                <textarea  placeholder=" 例）お問い合わせ内容の詳細をご記入ください。（400字以内）"></textarea>
+                <textarea  placeholder=" 例）お問い合わせ内容の詳細をご記入ください。　　（400字以内）"></textarea>
                 <br>
             </div>
             

@@ -24,11 +24,11 @@
       <div id="line-top"></div> <!-- トップの青い線 -->
       <div id="header-box">                
         <!-- ロゴをクリックすると、トップページのトップに遷移するようロゴにリンクを設定 -->
-        <div id="logo_company_name">
+        <div class="logo-and-company_name">
           <a href="<?php echo esc_url(home_url()); ?>#">  
-              <img id="header_logo" src="<?php echo get_template_directory_uri();?>/images/header_logo.jpg" alt="ヘッダーロゴ">
+              <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/header_logo.jpg" alt="ヘッダーロゴ">
           </a>   
-          <p id="company_name">Tac+NAVI</p>
+          <p class="company_name">Tac+NAVI</p>
         </div>
         
         <!-- PC用ナビ -->
@@ -43,7 +43,22 @@
         </div>
         
         <!-- タブレット用メニューボタン -->
-        <img id="tab-menu" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="スマホ用メニュー">
-
+        <img id="tab-menu-btn" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="スマホ用メニュー">
       </div>
+
+      <div id="tab-menu">
+      <div class="logo-and-company_name">
+          <a href="<?php echo esc_url(home_url()); ?>#">  
+              <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/header_logo.jpg" alt="ヘッダーロゴ">
+          </a>   
+          <p class="company_name">Tac+NAVI</p>
+        </div> 
+        <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
+        <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
+        <a href="<?php echo esc_url(home_url('/page/company/')); ?>" class="animate-border-link">会社情報</a>
+        <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
+        <a href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
+      </div>
+
+
     </header>

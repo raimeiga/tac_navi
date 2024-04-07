@@ -403,7 +403,6 @@ body {
 
   /* 事業内容  ここまで */
 
-
   /* 当社の強み  ここから */
   #advantage {
     width: 100%;
@@ -644,7 +643,7 @@ height: 700px;
 }
 
 table {
-  width: 860px; 
+  width: 660px; 
 }
 
 table, td{
@@ -953,10 +952,15 @@ td {
   height: 1500px;
 }
 
+
 #contact-info > p {
   font-size: 16px;
   padding: 0;
   margin: 0 0 50px 0;
+}
+
+#tab-top-sentence {
+  display: none;
 }
 
 /* 各ページヘッダー下の水色帯(タイトル背景） */
@@ -1021,6 +1025,10 @@ td {
 }
 
 /* パンくずリスト ここから*/
+.breadcrumb {
+  background-color: #fff;
+}
+
 .breadcrumb li {
   display: inline-block;
   font-size: 12px;
@@ -1033,10 +1041,11 @@ td {
 }
 
 #rumb_01,
-#news-company_01,
+#company_rumb_01,
 #news-rumb_01,
 #news_detail-rumb_01 {
   color: #444444;
+  text-decoration: none;
 }
 
 #rumb_01:hover {
@@ -1052,7 +1061,7 @@ td {
 }
 
 #rumb_02,
-#news-company_02,
+#company_rumb_02,
 #news-rumb_02{
   color: #38A1DB;
   text-decoration: none;  
@@ -1098,12 +1107,13 @@ td {
 }
 
 #contact-info_container {
-  width: 1110px;  
+  width: 80%;  
   margin-left: auto;
   margin-right: auto;
 }
 
 form p {
+  width: 100%;  
   padding: 0;
   margin: 115px 0 50px 0;
 }
@@ -1141,18 +1151,19 @@ form label {
 }
 
 .input_field {
-  width: 700px;
+  width: 60%;
   height: 2em;    /* emは親要素のフォントサイズを1とする単位 */
-  font-size: 16px;
+  font-size: 14px;
   font-family: Noto Sans JP;
   font-weight: 400;
   margin-bottom: 50px;
+  padding: 1px 2px 2px 2px;
 }
 
  textarea {
-  width: 700px;
+  width: 60%;
   height: 10em;
-  font-size: 16px;
+  font-size: 14px;
   font-family: Noto Sans JP;
   font-weight: 400;  
 } 

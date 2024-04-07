@@ -234,7 +234,7 @@ body {
 /* 事業内容  ここから */
 #business {
   width: 100%;
-  height: 1120px;   
+  height: 700px;   
   /* height: 1520px;  */
   /* background-color: antiquewhite; */
   background-image: url("images/background-colorful.png");
@@ -253,7 +253,7 @@ body {
 #advantage h1:nth-child(2){
   color: #444444;
   text-shadow: 5px 5px 4px #808080;
-  width: 250px;
+  width: 300px;
   text-align: center;
   height: 48px; /* 「事業内容」 */
   font-size: 56px;
@@ -276,19 +276,19 @@ body {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  margin: 90px auto 0 auto;
+  margin: 60px auto 0 auto;
 }
 
 #digital_wrapper {
   display: inline-block;
-  width: 55%;
+  width: 63%;
   /* background-color: red; */
-  margin: 0px 40px 0 0;  
+  margin: 0px 0px 0 0;  
 }
 
 #seminar_wrapper {
   display: inline-block;  
-  width: 310px;
+  width: 63%;
   /* background-color: red; */
   margin-top: 0px;
   margin-left: 0px;
@@ -296,24 +296,26 @@ body {
 
 #digital {  
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: left;
+  align-items: flex-start;
   width: 448px;
-  margin: 0 0 30px 0;
+  height: 32px;
+  margin: 0 0 28px 0;
 }
 
 #digital img {  
-  width: 39px;
-  height: 37px;
-  margin: 0 10px 5px 0px;  
+  width: 28px;
+  height: 26px;
+  margin: 5px 10px 5px 0px;  
 }
 
 #digital h1:nth-child(2) {  
-  width: 80%;
+  width: 50%;
+  height: 32px;
   /* height: 28px; */
   color: #0B368C ;
   text-shadow: none;
-  font-size: 40px;  /* 「デジタル戦略策定」 */
+  font-size: 28px;  /* 「デジタル戦略策定」 */
   font-family: "Noto Sans JP", sans-serif;
   font-weight:500;
   padding: 0;
@@ -322,9 +324,10 @@ body {
 
 #seminar {  
   display: flex;
-  justify-content: center;
+  justify-content: left;
   width: 270px;
-  margin: 0 auto 30px auto;
+  height: 32px;
+  margin: 0 0 28px 0;
 }
 
 #seminar img {  
@@ -333,11 +336,16 @@ body {
   margin: 0 0 0 0px;
 }
 
-#img-chart,
+#img-chart {
+  display: inline-block;
+  width: 16%;
+  margin-right: 0px;
+}
+
 #img-seminar-space {
   display: inline-block;
-  width: 29%;
-  margin-right: 0px;
+  width: 16%;
+  margin-top: 17px;
 }
 
 #seminar h1:nth-child(2) {  
@@ -362,10 +370,20 @@ body {
   margin-top: 16px;
 }
 
-#digital_explain01 p:nth-child(2),
-#seminar_explain01 p:nth-child(2) {
+#digital_explain02,
+#seminar_explain02 {
+  display: flex;
+  justify-content: space-between; 
   width: 100%;
-  font-size: 20px;
+  margin-top: 16px;
+}
+
+#digital_explain01 p:nth-child(2),
+#seminar_explain01 p:nth-child(2),
+#digital_explain02 p:nth-child(2),
+#seminar_explain02 p:nth-child(2) {
+  width: 100%;
+  font-size: 18px;
   padding: 0;  
   margin:0;  
 }
@@ -376,29 +394,14 @@ body {
   margin: 5px 8px 0 0;
 }
 
-#digital_explain02,
-#seminar_explain02 {
-  display: flex;
-  justify-content: space-between; 
-  width: 100%;
-  margin-top: 16px;
-}
 
-
-#digital_explain02 p:nth-child(2),
-#seminar_explain02 p:nth-child(2) {
-  width: 100%;
-  font-size: 20px;
-   padding: 0;  
-   margin: 0;  
- }
   /* 事業内容  ここまで */
 
 
   /* 当社の強み  ここから */
   #advantage {
     width: 100%;
-    height: 792px;
+    height: auto;
     background: #fff;
     border: 1px solid;
   }
@@ -412,7 +415,7 @@ body {
   #item_02,
   #item_03 {
     width: 280px;
-    height: 560px;
+    height: 540px;
     border: 3px solid;
     border-color: #38A1DB;
     margin: 0 10px;
@@ -459,8 +462,7 @@ body {
   }
 
   #item_01 > h3,
-  #item_02 > h3,
-  #item_03 > h3 {
+  #item_02 > h3 {
     width: 230px;
     height: 70px;
     color: #287199;
@@ -480,16 +482,14 @@ body {
     font-family: "Noto Sans JP", sans-serif;
     font-size: 20px;  
     font-weight: 500;
-    padding: 0;
-    text-align: center;
+    padding: 0;   
     margin: 0 auto;
   }
 
   #item_01 > p,
   #item_02 > p,
   #item_03 > p {
-    width: 250px;
-    height: 161px;
+    width: 250px;    
     color: #444444;
     font-family: "Noto Sans JP", sans-serif;
     font-size: 14px;  
@@ -558,7 +558,6 @@ height: 700px;
   font-size: 12px;
   font-family: Noto Sans JP;
   font-weight: 400;  
-  background-color: #287199;  
   border-radius: 5px;
   width: 42px;
   height: 19px;
@@ -710,12 +709,20 @@ td {
   font-size: 12px;
   font-family: Noto Sans JP;
   font-weight: 400;  
-  background-color: #287199;  
   border-radius: 5px;
   width: 42px;
   height: 18.5px;
   margin: 0 36px 0 0px;
 }
+
+.news-color {
+  background-color: #287199;  
+}
+
+.press-color {
+  background-color: #DB39A3;  
+}
+
 
 #news_and_press_date {
   display: inline-block;  
@@ -772,7 +779,6 @@ td {
   font-size: 20px;
   font-family: Noto Sans JP;
   font-weight: 400;  
-  background-color: #287199;  
   border-radius: 5px;
   width: 75px;
   height: 32px;
@@ -811,6 +817,11 @@ td {
   font-weight: 400;
   margin: 0 0 0 4px;
 }
+
+#post-img {
+  width: 600px;
+}
+
 
 /* 本文 */
 #news_detail_wrapper p:nth-child(2) {
@@ -873,7 +884,6 @@ td {
   font-size: 12px;
   font-family: Noto Sans JP;
   font-weight: 400;  
-  background-color: #287199;  
   border-radius: 5px;
   width: 42px;
   height: 18.5px;

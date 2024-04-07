@@ -89,16 +89,27 @@
             <!-- カテゴリー名を取得　テラコヤのAI先生より提供 -->     
         
             <div id="sidebar-category-and-date">
-                <span id="sidebar-category">   <!-- カテゴリー名 -->
-                  <?php
-                      $categories = get_the_category(); // 現在の投稿に割り当てられたカテゴリーを取得
-                        if ( ! empty( $categories ) ) {
-                            echo esc_html( $categories[0]->name ); // 最初のカテゴリー名を表示
-                        }; echo "　";
-                  ?>
-                </span>
+                
+              <!-- カテゴリー名を取得　増井先生より提供 -->
+              <?php 
+                $categories = get_the_category(); 
+                if ( ! empty( $categories ) ) {
+                  $category_name = $categories[0]->name;
+                  $class_name = $categories[0]->slug."-color";
+                };
+              ?>      
+              <span id="sidebar-category" class="<?php echo $class_name; ?>">
+                <?php
+                  if ( ! empty( $categories ) ) {
+                    echo esc_html( $category_name); // 最初のカテゴリー名を表示
+                    echo "　";
+                  };
+                ?>
+              </span>        
+            
+            
+            
 
-                <!-- <p class="news-bg-color"><?php echo get_the_category(); ?></p> -->
 
                 <P id="sidebar-date"><?php echo get_the_date(); ?></P>  <!-- 日付 -->
             </div>

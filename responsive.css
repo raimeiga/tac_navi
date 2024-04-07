@@ -291,7 +291,7 @@ margin-right: auto;
   font-weight: 400;  
   margin: 0 auto;
 }
-
+/* 新着情報・お知らせ ここまで*/
 
 /* お問い合わせページ ここから */
 #top-sentence {
@@ -301,7 +301,31 @@ margin-right: auto;
 #tab-top-sentence {
   display: block;
 }
+/* お問い合わせページ ここまで */
 
+
+/* お知らせ詳細ページ ここから */
+
+/* ニュース詳細のdiv */
+#news_detail_wrapper {
+  display: inline-block;
+  margin: 0 30px 0 30px;
+  width: 70%;
+}
+
+/* sidebarの箱 */
+#sidebar {  
+  margin-right: 20px;
+}
+
+/*「お知らせ・新着情報」の表記*/
+
+#sidebar-news::before,
+#sidebar-news::after {
+  width: 20%; /* 横線の長さ */
+}
+
+/* お知らせ詳細ページ ここまで */
 
 
 

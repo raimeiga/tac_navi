@@ -11,6 +11,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/responsive.css" />
   
+    <!-- ↓ ここでFont Awesomeを読み込む -->
+    <link href=”https://use.fontawesome.com/releases/v6.0.0/css/all.css” rel=”stylesheet”>
     
     <!-- ↓ ここでGoogle Fontsを読み込みます -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -46,18 +48,20 @@
         <img id="tab-menu-btn" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="スマホ用メニュー">
       </div>
 
+      <!-- タブレット用ナビ -->
       <div id="tab-menu">
-      <div class="logo-and-company_name">
+      <h1 class="space_40px"><!-- 単なるスペース --></h1>
+      <div id="tab-logo-and-company_name">
           <a href="<?php echo esc_url(home_url()); ?>#">  
             <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/white_logo.jpg" alt="ヘッダーロゴ">
           </a>   
-          <p class="company_name">Tac+NAVI</p>
+          <p id="tab-company_name">Tac+NAVI</p>
         </div> 
         <nav id="tab-navi"> 
-          <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
-          <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
-          <a href="<?php echo esc_url(home_url('/page/company/')); ?>" class="animate-border-link">会社情報</a>
-          <a href="<?php echo esc_url(home_url('/category/news/')); ?>" class="animate-border-link">お知らせ</a>
+          <a href="<?php echo esc_url(home_url()); ?>#" >トップページ</a>             
+          <a href="<?php echo esc_url(home_url()); ?>#business" >事業内容</a>
+          <a href="<?php echo esc_url(home_url('/page/company/')); ?>" >会社情報</a>
+          <a href="<?php echo esc_url(home_url('/category/news/')); ?>" >お知らせ</a>
           <a href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
         </nav>
       </div>

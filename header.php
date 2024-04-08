@@ -9,6 +9,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/responsive.css" />
+
     <!-- ↓ ここでFont Awesomeを読み込む -->
     <link href=”https://use.fontawesome.com/releases/v6.0.0/css/all.css” rel=”stylesheet”>
     
@@ -18,8 +21,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/responsive.css" />
 </head>
   
 <body>
@@ -46,13 +47,13 @@
         </div>
         
         <!-- タブレット用メニューボタン -->
-        <img id="tab-menu-btn" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="タブレット用メニュー">
+        <img id="tab-menu-btn" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="タブレット用メニューのボタン">
       </div>
 
       <!-- タブレット用ナビ -->
       <div id="tab-menu">
-        <div id="close-btn-wrapper">
-          <p id="tab-menu-close-btn">&#x2715;	</p>
+        <div id="close-btn-wrapper">        
+          <img id="tab-menu-close-btn" src="<?php echo get_template_directory_uri();?>/images/close-btn_02.svg" alt="">
         </div>
         <div id="tab-logo-and-company_name">
           <a href="<?php echo esc_url(home_url()); ?>#">  

@@ -8,9 +8,7 @@
     <meta name="description" content="tac_naviの説明" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/responsive.css" />
-  
+    
     <!-- ↓ ここでFont Awesomeを読み込む -->
     <link href=”https://use.fontawesome.com/releases/v6.0.0/css/all.css” rel=”stylesheet”>
     
@@ -19,6 +17,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
+
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri();?>/responsive.css" />
 </head>
   
 <body>
@@ -45,19 +46,21 @@
         </div>
         
         <!-- タブレット用メニューボタン -->
-        <img id="tab-menu-btn" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="スマホ用メニュー">
+        <img id="tab-menu-btn" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="タブレット用メニュー">
       </div>
 
       <!-- タブレット用ナビ -->
       <div id="tab-menu">
-      <h1 class="space_40px"><!-- 単なるスペース --></h1>
-      <div id="tab-logo-and-company_name">
+        <div id="close-btn-wrapper">
+          <p id="tab-menu-close-btn">&#x2715;	</p>
+        </div>
+        <div id="tab-logo-and-company_name">
           <a href="<?php echo esc_url(home_url()); ?>#">  
-            <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/white_logo.jpg" alt="ヘッダーロゴ">
-          </a>   
+            <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/white_logo.jpg" alt="タブレット用メニューのロゴ">
+          </a>
           <p id="tab-company_name">Tac+NAVI</p>
-        </div> 
-        <nav id="tab-navi"> 
+        </div>
+        <nav id="tab-navi">
           <a href="<?php echo esc_url(home_url()); ?>#" >トップページ</a>             
           <a href="<?php echo esc_url(home_url()); ?>#business" >事業内容</a>
           <a href="<?php echo esc_url(home_url('/page/company/')); ?>" >会社情報</a>
@@ -65,6 +68,4 @@
           <a href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
         </nav>
       </div>
-
-
     </header>

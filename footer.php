@@ -16,6 +16,7 @@
       <p id="copyright">&copy;2024 IT Consultants, Inc.</p>
     </div>
   </footer>
+  <script src="js/script.js"></script>
   <?php wp_footer(); ?>
 </body>
 </html>

@@ -3,6 +3,7 @@
 body {
   max-width: 949px;
   min-width: 219px;
+  height:auto;
   background-color: #fff;
   margin-left: auto;
   margin-right: auto;
@@ -10,55 +11,44 @@ body {
 }
 
 /* ここからヘッダー --------------- */
-#line-top {
-    width: 100%;
-    height: 20px; 
-    background-color: #38A1DB;  
-}
 
-#header-box {  
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: 95px;   
-  /* background-color: #d4e514;   */
-}
-
-.space_40px{
-  height: 40px;
-  margin: 0;
-}
-
-
-/* ロゴと社名の入ったdiv */
-
-
-   
 #header_navi {
   display: none;
 }
 
- #tab-menu-btn { 
+#tab-menu-btn { 
   display: inline-block; /* または必要なスタイルに変更 */
   width: 90px;
   height: 90px;
   margin-right: 10px;   
-  }
+}
+
+#close-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#tab-menu-close-btn { 
+  display: inline-block; /* または必要なスタイルに変更 */
+  font-size: 60px;
+  margin: 0 30px 0 0;
+  color: #fff;
+}
 
 #tab-menu {
   background-color: #38A1DB;
-  display: block;
   width: 100%;
-  height: 500px;
+  height: 100vh;
+  z-index: 100;
 }
 
+/* ロゴと社名の入ったdiv */  
 #tab-logo-and-company_name {
   display: flex;
   justify-content: space-between;
   width: 270px;
   margin-bottom: 30px;
- }
-   
+ }   
 
 #tab-company_name {
   color: #fff;
@@ -84,16 +74,10 @@ body {
   text-decoration: underline;
 }
 
-.fa-thin fa-chevron-right {
-  background-color: #fff;
-}
-
-
-
 /* フッターここから --------------- */
 
 
-  /* フッターここまで --------------- */
+/* フッターここまで --------------- */
 
 /* メインビジュアル */
 #main_copy {

@@ -31,7 +31,8 @@
       </div>
 
   </footer>
-  <script type="text/javascript" src="js/script.js"></script>
+  
   <?php wp_footer(); ?>
+  <script src="js/script.js"></script>
 </body>
 </html>

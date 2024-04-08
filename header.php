@@ -58,9 +58,9 @@
           <a href="<?php echo esc_url(home_url()); ?>#">  
             <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/white_logo.jpg" alt="タブレット用メニューのロゴ">
           </a>
-          <p id="tab-company_name">Tac+NAVI</p>
+          <p class="tab-company_name">Tac+NAVI</p>
         </div>
-        <nav id="tab-navi">
+        <nav class="tab-navi">
           <a href="<?php echo esc_url(home_url()); ?>#" >トップページ</a>             
           <a href="<?php echo esc_url(home_url()); ?>#business" >事業内容</a>
           <a href="<?php echo esc_url(home_url('/page/company/')); ?>" >会社情報</a>

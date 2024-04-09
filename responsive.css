@@ -12,7 +12,6 @@ body {
 }
 
 /* ここからヘッダー --------------- */
-
 #header_navi {
   display: none;
 }
@@ -54,14 +53,21 @@ body {
   margin-bottom: 30px;
  }   
 
-.tab-company_name {
+ #tab-header_logo {  
+  width:65px;
+  height: 65px;
+  margin-top: 16px;
+  margin-left: 30px;
+}
+
+#tab-company_name {
   color: #fff;
   font-size: 36px;
   font-weight: 400;
   margin: 20px 0px 20px 30px;
 }
 
-.tab-navi > a {
+#tab-navi > a {
   color: #fff;
   display: block;
   margin: 0 0 20px 30px;

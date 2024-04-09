@@ -49,7 +49,7 @@ body {
   /* background-color: blue; */
 }
 
-/* #tab-menu, */
+#tab-menu,#tab-footer,
 #tab-menu-btn {
   display: none;
   }

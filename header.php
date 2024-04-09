@@ -46,8 +46,8 @@
            <a id="nav-contact" href="<?php echo esc_url(home_url('/page/contact/')); ?>" >お問い合わせ</a>
         </div>
         
-        <!-- タブレット用メニューボタン -->
-        <img id="tab-menu-btn" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="タブレット用メニューのボタン">
+        <!-- タブレット用メニュー -->
+        <img id="tab-menu-btn" src="<?php echo get_template_directory_uri();?>/images/menu_01.svg" alt="タブレット用メニュー">
       </div>
 
       <!-- タブレット用ナビ -->
@@ -57,11 +57,11 @@
         </div>
         <div id="tab-logo-and-company_name">
           <a href="<?php echo esc_url(home_url()); ?>#">  
-            <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/white_logo.jpg" alt="タブレット用メニューのロゴ">
+            <img id="tab-header_logo" src="<?php echo get_template_directory_uri();?>/images/white_logo.jpg" alt="タブレット用メニューのロゴ">
           </a>
-          <p class="tab-company_name">Tac+NAVI</p>
+          <p id="tab-company_name">Tac+NAVI</p>
         </div>
-        <nav class="tab-navi">
+        <nav id="tab-navi">
           <a href="<?php echo esc_url(home_url()); ?>#" >トップページ</a>             
           <a href="<?php echo esc_url(home_url()); ?>#business" >事業内容</a>
           <a href="<?php echo esc_url(home_url('/page/company/')); ?>" >会社情報</a>

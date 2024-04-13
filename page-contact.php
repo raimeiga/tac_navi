@@ -70,6 +70,9 @@
           </form>
       </div>    
    </section>
+   <div class="content">
+      <?php the_content(); ?>
+    </div>    
 </main>
 
 <?php get_footer(); ?>    <!-- ← footer.phpからヘッダーのコードを呼び出す -->

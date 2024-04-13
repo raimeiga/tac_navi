@@ -21,6 +21,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
 
+    <!-- jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <script src="<?php echo get_template_directory_uri(); ?>/js/script.js" type="text/javaScript" charset="utf-8"></script>
 </head>
   
 <body>

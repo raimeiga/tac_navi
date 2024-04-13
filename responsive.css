@@ -17,7 +17,7 @@ body {
 }
 
 #tab-menu-btn { 
-  display: inline-block; /* または必要なスタイルに変更 */
+  display: block;
   width: 90px;
   height: 90px;
   margin-right: 10px;   

@@ -20,7 +20,7 @@
       </ul>
     </div>
 
-    <div id="height_100"></div>
+    <div class="height_100"></div>
     <h1>会社概要</h1>
     <table id="table-overview">
        <tr>
@@ -78,7 +78,7 @@
        </tr>
 
        <tr>
-         <td class="item" id="Number-of-employees">
+         <td class="item" id="number-of-employees">
           <span>従業員数</span>     
          </td>
          <td class="content">
@@ -95,8 +95,8 @@
          </td>
        </tr>       
     </table>
-
-    <div id="height_100"></div>
+    
+    <div class="height_100"><!-- 単なるスペース --></div>
     <h1>事業所一覧</h1>
     <table id="table-plant">
        <tr>

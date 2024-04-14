@@ -44,24 +44,7 @@
       <div id="icon_and_date_wrapper">
         <img id="calender" src="<?php echo get_template_directory_uri();?>/images/icon-calender.png">  <!-- アイコン -->
         <p id="news_detail_date"><?php echo get_the_date(); ?></p>  <!-- 日付 -->
-      </div>
-            
-     <!-- <?php 
-      // 現在の投稿のIDを取得
-      $post_id = get_the_ID(); // 現在の投稿のIDを取得する
-      $content = get_post_field( 'post_content', $post_id ); // 投稿の本文を取得する
-      
-      // 投稿本文から画像のURLを正規表現で抽出する
-      preg_match_all('/<img.+?src="(.+?)".*?>/i', $content, $matches);
-      
-      // 抽出した画像のURLを出力する
-      if (isset($matches[1])) {
-          foreach ($matches[1] as $image_url) {
-              echo '<img id="post-img" src="' . $image_url . '" alt="記事内の画像">';
-          }
-      }      
-          ?>  -->
-
+      </div>            
       <P><?php the_content(); ?></P>        <!-- 本文 -->
     </div>
     

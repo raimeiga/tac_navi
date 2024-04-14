@@ -330,8 +330,6 @@
     display: none;
   }
 
-
-
   #tab-news_and_info_content {
     display: inline-block;  
     color: #444444; 
@@ -350,7 +348,10 @@
 
   #tab-top-sentence {
     display: block;
+    width: 67.5%;
+    margin: 115px auto 0 auto;
   }
+
   /* お問い合わせページ ここまで */
 
 

@@ -125,7 +125,7 @@
         <h1 class="space_px"><!-- 単なるスペース --></h1>
 
         <section id="news">
-          <h3 class="title-news">新着情報・お知らせ</h3>
+          <h3 class="title-news">お知らせ・新着情報</h3>
           <h1 class="space_50px"><!-- 単なるスペース --></h1>
           <p class="news_and_info_line"><!-- 投稿を仕切るための直線 --></p>     
           <div id="news-container">

@@ -1,383 +1,380 @@
 @media screen and (max-width: 949px) { 
+  body {
+    max-width: 949px;
+    min-width: 768px;
+    height:auto;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Noto Sans JP;
+    z-index: 90;
+  }
 
-body {
-  max-width: 949px;
-  min-width: 768px;
-  height:auto;
-  background-color: #fff;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Noto Sans JP;
-  z-index: 90;
-}
+  /* ここからヘッダー --------------- */
+  #header_navi {
+    display: none;
+  }
 
-/* ここからヘッダー --------------- */
-#header_navi {
-  display: none;
-}
+  #tab-menu-btn {
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin-right: 10px;
+  }
 
-#tab-menu-btn {
+  #tab-menu {
+    background-color: #38A1DB;
+    position: fixed;
+      right: 0;
+      top: 0;
+    width: 100%;
+    height: 500px;
+    z-index: 100;
+  }
+
+  #close-btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #tab-menu-close-btn { 
+    display: inline-block;
+    width: 90px;;
+    height: 90px;
+    margin: 0 10px 0 0;
+  }
+
+  /* ロゴと社名の入ったdiv */  
+  #tab-logo-and-company_name {
+    display: flex;
+    justify-content: space-between;
+    width: 270px;
+    margin-bottom: 30px;
+  }   
+
+  #tab-header_logo {  
+    width:65px;
+    height: 65px;
+    margin-top: 16px;
+    margin-left: 30px;
+  }
+
+  #tab-company_name {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 400;
+    margin: 20px 0px 20px 30px;
+  }
+
+  #tab-navi > a {
+    color: #fff;
+    display: block;
+    margin: 0 0 20px 30px;
+    text-decoration: none;  
+    background-image: url("images/chevron-right.svg");
+    background-repeat: no-repeat;
+    background-position: 300px;
+  }
+
+  #tab-navi > a:hover {
+    color: #fff;
+    display: block;
+    margin: 0 0 20px 30px;  
+    text-decoration: underline;
+  }
+
+  /* フッターここから --------------- */
+  #footer-box {
+    display: none;
+  }
+
+  #tab-footer {  
   display: block;
-  width: 90px;
-  height: 90px;
-  margin-right: 10px;
-}
-
-#tab-menu {
   background-color: #38A1DB;
-  position: fixed;
-    right: 0;
-    top: 0;
   width: 100%;
   height: 500px;
   z-index: 100;
-}
-
-#close-btn-wrapper {
-  display: flex;
-  justify-content: flex-end;
-}
-
-#tab-menu-close-btn { 
-  display: inline-block;
-  width: 90px;;
-  height: 90px;
-  margin: 0 10px 0 0;
-}
-
-/* ロゴと社名の入ったdiv */  
-#tab-logo-and-company_name {
-  display: flex;
-  justify-content: space-between;
-  width: 270px;
-  margin-bottom: 30px;
- }   
-
- #tab-header_logo {  
-  width:65px;
-  height: 65px;
-  margin-top: 16px;
-  margin-left: 30px;
-}
-
-#tab-company_name {
-  color: #fff;
-  font-size: 36px;
-  font-weight: 400;
-  margin: 20px 0px 20px 30px;
-}
-
-#tab-navi > a {
-  color: #fff;
-  display: block;
-  margin: 0 0 20px 30px;
-  text-decoration: none;  
-  background-image: url("images/chevron-right.svg");
-  background-repeat: no-repeat;
-  background-position: 300px;
-}
-
-#tab-navi > a:hover {
-  color: #fff;
-  display: block;
-  margin: 0 0 20px 30px;  
-  text-decoration: underline;
-}
-
-/* フッターここから --------------- */
-#footer-box {
-  display: none;
-}
-
-#tab-footer {  
- display: block;
- background-color: #38A1DB;
- width: 100%;
- height: 500px;
- z-index: 100;
-}
-
-#tab-footer-navi > a {
-  color: #fff;
-  display: block;
-  margin: 0 0 20px 30px;
-  text-decoration: none;  
-  background-image: url("images/chevron-right.svg");
-  background-repeat: no-repeat;
-  background-position: 300px;
-}
-
-#tab-footer-navi > a:hover {
-  color: #fff;
-  display: block;
-  margin: 0 0 20px 30px;  
-  text-decoration: underline;
-}
-
-/* フッターここまで --------------- */
-
-/* メインビジュアル */
-#main_copy {
-  width: 100%;
-  height: 420px;
-  background-image: url("images/main_visual.jpg");
-  background-size: cover; /* 背景画像がdivのサイズに合わせてカバーされます */
-  background-position: center; /* 背景画像がdivの中心に表示されます */
-}
-
-#copy_01 {
-  /* background-color: red; */
-  width: 300px;
-  padding-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#copy_01 h1:nth-child(1) {
-  display: inline-block;
-  font-size: 148px;
-  font-weight: 500;
-  color: #0B368C;
-  line-height: 1;
-  padding: 0 0 0px 0px;
-  margin: 0 0 0 0px;
-}
-
-#copy_01 h1:nth-child(2) {
-  display: inline-block;
-  font-size: 148px;
-  font-weight: 500;
-  color: #008FDB;
-  line-height: 1;
-  padding: 0;
-  margin: 0;
-}
-
-#copy_02 {
-  /* background-color: red; */
-  width: 524px;    
-margin-left: auto;
-margin-right: auto;
-}
-
-#copy_02 h3:nth-child(1) {
-  font-size: 64px;
-  font-weight: 500;
-  color: #008FDB;
-  padding: 0 0 7px 0;; 
-  margin: 0;
-}
-
-#copy_02 p:nth-child(2) {
-  font-size: 28px;
-  font-weight: 500;
-  color: #0B368C;
-  padding: 0;
-  margin: 0;
-}
-
-/* メインビジュアル　ここまで */
-
-/* 事業内容  ここから */
-#business {
-  width: 100%;
-  height: 650px;   
-  /* height: 1520px;  */
-  /* background-color: antiquewhite; */
-  background-image: url("images/background-colorful.png");
-  /* background-size: cover; 背景画像がdivのサイズに合わせてカバーされます */
-  background-position: center; /* 背景画像がdivの中心に表示されます */
   }
 
- .space_px {
-  width: 100%;
-  height: 90px;
-  margin: 0;
-  /* background-color: #b1c4ce; */
+  #tab-footer-navi > a {
+    color: #fff;
+    display: block;
+    margin: 0 0 20px 30px;
+    text-decoration: none;  
+    background-image: url("images/chevron-right.svg");
+    background-repeat: no-repeat;
+    background-position: 300px;
   }
 
-  #digital img {  
-    width: 28px;
-    height: 26px;
-    margin: 5px 10px 5px 0px;  
+  #tab-footer-navi > a:hover {
+    color: #fff;
+    display: block;
+    margin: 0 0 20px 30px;  
+    text-decoration: underline;
   }
 
-  #img-chart {
-    display: none;
-  }
-  
-  #img-seminar-space {
-    display: none;
+  /* フッターここまで --------------- */
+
+  /* メインビジュアル */
+  #main_copy {
+    width: 100%;
+    height: 420px;
+    background-image: url("images/main_visual.jpg");
+    background-size: cover; /* 背景画像がdivのサイズに合わせてカバーされます */
+    background-position: center; /* 背景画像がdivの中心に表示されます */
   }
 
-  #digital_wrapper {
+  #copy_01 {
+    /* background-color: red; */
+    width: 300px;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #copy_01 h1:nth-child(1) {
     display: inline-block;
-    width: 75%;
-    /* background-color: red; */
-    margin: 0 auto;  
+    font-size: 148px;
+    font-weight: 500;
+    color: #0B368C;
+    line-height: 1;
+    padding: 0 0 0px 0px;
+    margin: 0 0 0 0px;
   }
-  
-  #seminar_wrapper {
-    display: inline-block;  
-    width: 75%;
-    /* background-color: red; */
-    margin-top: 0px;
-    margin-left: 0px;
+
+  #copy_01 h1:nth-child(2) {
+    display: inline-block;
+    font-size: 148px;
+    font-weight: 500;
+    color: #008FDB;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
   }
-  
-/* 事業内容  ここまで */
 
-/* 当社の強み  ここから */
-#advantage {
-  width: 100%;
-  height: 1000px;  
-  background: #fff;
-  border: 1px solid;
-}
-
-#advantage_container {
-  width: 100%;
- display: block;
-}
-
-#item_01,
-#item_02,
-#item_03 {
-  display: none;
-} 
-
-.tab-item {
-  display: block;
-  width: 72%;  
-  border: 3px solid;
-  border-color: #38A1DB;
-  margin: 0 auto 40px auto;
-}
-
-.tab-item_child {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  margin: 30px auto 30px auto; 
-}
-
-#tab-item_child_02 > h3 {
-  margin-left: 25px;
-}
-
-#tab-item_child_03 > h3 {
-  margin-left: 20px;
-  margin-right: 40px;
-}
-
-.tab-item_child > h1 { 
-  width: 59px;    
-  color: rgba(175, 204, 219, 0.6);   /* テキストのぼかし・シャドウ */
-  text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);  /* テキストを斜体にするプロパティ */    
-  transform: skewX(-27deg);
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 32px;  
-  font-weight: 600;
-  padding: 0;  
-  line-height: 1;
-  margin: 0;
-}
-
-.tab-item_child > h3 {  
-  /* width: 460px; */
-  line-height: 1;
-  color: #287199;
-  text-align: left;
-  text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);  /* テキストを斜体にするプロパティ */    
-    transform: skewX(-27deg);
-  font-family: "Noto Sans JP", sans-serif;
-  font-size: 24px;  
-  font-weight: 500;
-  padding: 0;
-  margin: 0 0 0 0;   
- }
-
- .tab-item > p {
-  display: block;
-  width: 76%;
-  margin: 20px auto;
- }
-
-/* 当社の強み  ここまで */
-
-/* 新着情報・お知らせ ここから*/
-
-.title-news::before,
-.title-news::after {
-  background-color: #0B368C; /* 横線の色 */
-  content: "";
-  height: 3px; /* 横線の高さ */
-  width: 250px; /* 横線の長さ */
-}
-.title-news::before {
-  margin-right: 15px; /* 文字との余白 */
-}
-.title-news::after {
-  margin-left: 15px; /* 文字との余白 */
-}
-
-#news-item {
-  width: 660px;
+  #copy_02 {
+    /* background-color: red; */
+    width: 524px;    
   margin-left: auto;
   margin-right: auto;
-}
+  }
 
-#news_and_info_content {
-  display: none;
-}
+  #copy_02 h3:nth-child(1) {
+    font-size: 64px;
+    font-weight: 500;
+    color: #008FDB;
+    padding: 0 0 7px 0;; 
+    margin: 0;
+  }
 
+  #copy_02 p:nth-child(2) {
+    font-size: 28px;
+    font-weight: 500;
+    color: #0B368C;
+    padding: 0;
+    margin: 0;
+  }
 
+  /* メインビジュアル　ここまで */
 
-#tab-news_and_info_content {
-  display: inline-block;  
-  color: #444444; 
-  text-decoration: none;
-  font-size: 12px;
-  font-family: Noto Sans JP;
-  font-weight: 400;  
-  margin: 0 auto;
-}
-/* 新着情報・お知らせ ここまで*/
+  /* 事業内容  ここから */
+  #business {
+    width: 100%;
+    height: 650px;   
+    /* height: 1520px;  */
+    /* background-color: antiquewhite; */
+    background-image: url("images/background-colorful.png");
+    /* background-size: cover; 背景画像がdivのサイズに合わせてカバーされます */
+    background-position: center; /* 背景画像がdivの中心に表示されます */
+    }
 
-/* お問い合わせページ ここから */
-#top-sentence {
- display: none;
-}
+  .space_px {
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    /* background-color: #b1c4ce; */
+    }
 
-#tab-top-sentence {
+    #digital img {  
+      width: 28px;
+      height: 26px;
+      margin: 5px 10px 5px 0px;  
+    }
+
+    #img-chart {
+      display: none;
+    }
+    
+    #img-seminar-space {
+      display: none;
+    }
+
+    #digital_wrapper {
+      display: inline-block;
+      width: 75%;
+      /* background-color: red; */
+      margin: 0 auto;  
+    }
+    
+    #seminar_wrapper {
+      display: inline-block;  
+      width: 75%;
+      /* background-color: red; */
+      margin-top: 0px;
+      margin-left: 0px;
+    }
+    
+  /* 事業内容  ここまで */
+
+  /* 当社の強み  ここから */
+  #advantage {
+    width: 100%;
+    height: 1000px;  
+    background: #fff;
+    border: 1px solid;
+  }
+
+  #advantage_container {
+    width: 100%;
   display: block;
-}
-/* お問い合わせページ ここまで */
+  }
+
+  #item_01,
+  #item_02,
+  #item_03 {
+    display: none;
+  } 
+
+  .tab-item {
+    display: block;
+    width: 72%;  
+    border: 3px solid;
+    border-color: #38A1DB;
+    margin: 0 auto 40px auto;
+  }
+
+  .tab-item_child {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 30px auto 30px auto; 
+  }
+
+  #tab-item_child_02 > h3 {
+    margin-left: 25px;
+  }
+
+  #tab-item_child_03 > h3 {
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+
+  .tab-item_child > h1 { 
+    width: 59px;    
+    color: rgba(175, 204, 219, 0.6);   /* テキストのぼかし・シャドウ */
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);  /* テキストを斜体にするプロパティ */    
+    transform: skewX(-27deg);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 32px;  
+    font-weight: 600;
+    padding: 0;  
+    line-height: 1;
+    margin: 0;
+  }
+
+  .tab-item_child > h3 {  
+    /* width: 460px; */
+    line-height: 1;
+    color: #287199;
+    text-align: left;
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.25);  /* テキストを斜体にするプロパティ */    
+      transform: skewX(-27deg);
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 24px;  
+    font-weight: 500;
+    padding: 0;
+    margin: 0 0 0 0;   
+  }
+
+  .tab-item > p {
+    display: block;
+    width: 76%;
+    margin: 20px auto;
+  }
+
+  /* 当社の強み  ここまで */
+
+  /* 新着情報・お知らせ ここから*/
+
+  .title-news::before,
+  .title-news::after {
+    background-color: #0B368C; /* 横線の色 */
+    content: "";
+    height: 3px; /* 横線の高さ */
+    width: 250px; /* 横線の長さ */
+  }
+  .title-news::before {
+    margin-right: 15px; /* 文字との余白 */
+  }
+  .title-news::after {
+    margin-left: 15px; /* 文字との余白 */
+  }
+
+  #news-item {
+    width: 660px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #news_and_info_content {
+    display: none;
+  }
 
 
-/* お知らせ詳細ページ ここから */
 
-/* ニュース詳細のdiv */
-#news_detail_wrapper {
-  display: inline-block;
-  margin: 0 30px 0 30px;
-  width: 70%;
-}
+  #tab-news_and_info_content {
+    display: inline-block;  
+    color: #444444; 
+    text-decoration: none;
+    font-size: 12px;
+    font-family: Noto Sans JP;
+    font-weight: 400;  
+    margin: 0 auto;
+  }
+  /* 新着情報・お知らせ ここまで*/
 
-/* sidebarの箱 */
-#sidebar {  
-  margin-right: 20px;
-}
+  /* お問い合わせページ ここから */
+  #top-sentence {
+  display: none;
+  }
 
-/*「お知らせ・新着情報」の表記*/
-
-#sidebar-news::before,
-#sidebar-news::after {
-  width: 20%; /* 横線の長さ */
-}
-
-/* お知らせ詳細ページ ここまで */
+  #tab-top-sentence {
+    display: block;
+  }
+  /* お問い合わせページ ここまで */
 
 
+  /* お知らせ詳細ページ ここから */
+
+  /* ニュース詳細のdiv */
+  #news_detail_wrapper {
+    display: inline-block;
+    margin: 0 30px 0 30px;
+    width: 70%;
+  }
+
+  /* sidebarの箱 */
+  #sidebar {  
+    margin-right: 20px;
+  }
+
+  /*「お知らせ・新着情報」の表記*/
+
+  #sidebar-news::before,
+  #sidebar-news::after {
+    width: 20%; /* 横線の長さ */
+  }
+
+  /* お知らせ詳細ページ ここまで */
 
 }

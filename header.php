@@ -26,22 +26,22 @@
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/script.js" type="text/javaScript" charset="utf-8"></script>
 </head>
-  
+
 <body>
     <header>
       <div id="line-top"></div> <!-- トップの青い線 -->
-      <div id="header-box">                
+      <div id="header-box">
         <!-- ロゴをクリックすると、トップページのトップに遷移するようロゴにリンクを設定 -->
         <div class="logo-and-company_name">
-          <a href="<?php echo esc_url(home_url()); ?>#">  
+          <a href="<?php echo esc_url(home_url()); ?>#">
               <img class="header_logo" src="<?php echo get_template_directory_uri();?>/images/skyblue_logo.jpg" alt="ヘッダーロゴ">
-          </a>   
+          </a>
           <p class="company_name">Tac+NAVI</p>
         </div>
         
         <!-- PC用ナビ -->
         <div id="header_navi">
-           <nav id="navi">       
+           <nav id="navi">
               <a href="<?php echo esc_url(home_url()); ?>#" class="animate-border-link">トップページ</a>             
               <a href="<?php echo esc_url(home_url()); ?>#business" class="animate-border-link">事業内容</a>
               <a href="<?php echo esc_url(home_url('/page/company/')); ?>" class="animate-border-link">会社情報</a>

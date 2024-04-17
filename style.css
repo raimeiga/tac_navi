@@ -6,7 +6,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: Noto Sans JP;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 /* ここからヘッダー --------------- */
@@ -187,7 +187,7 @@ body {
     font-family: Noto Sans JP;
   }
 
-  #copy_01 h1:nth-child(1) {
+  #copy_01 > h1:nth-child(1) {
     display: inline-block;
     font-size: 148px;    
     font-weight: 500;
@@ -195,6 +195,7 @@ body {
     line-height: 1;
     padding: 0 0 0px 0px;
     margin: 0 0 0 0px;
+    text-align: center;
   }
 
   #copy_01 h1:nth-child(2) {
@@ -205,14 +206,15 @@ body {
     line-height: 1;
     padding: 0;
     margin: 0;
+    text-align: center;
   }
 
   #copy_02 {
     /* background-color: red; */
     width: 524px;    
-  margin-left: auto;
-  margin-right: auto;
-  font-family: Noto Sans JP;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Noto Sans JP;
   }
 
   #copy_02 h3:nth-child(1) {
@@ -221,6 +223,7 @@ body {
     color: #008FDB;
     padding: 0 0 7px 0;; 
     margin: 0;
+    text-align: center;
   }
 
   #copy_02 p:nth-child(2) {
@@ -229,6 +232,7 @@ body {
     color: #0B368C;
     padding: 0;
     margin: 0;
+    text-align: center;
   }
 
 /* メインビジュアル　ここまで */
